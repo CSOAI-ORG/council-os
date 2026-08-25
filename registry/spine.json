@@ -808,9 +808,21 @@
     "x402-receipt",
     "x402-wrap",
     "abci-bridge",
-    "libp2p-agent-mesh"
+    "libp2p-agent-mesh",
+    "xrpl-attest"
    ],
-   "bind": "existing csoai-* repos folded in, not rewritten"
+   "bind": "existing csoai-* repos folded in, not rewritten",
+   "xrpl_attest": {
+    "status": "LIVE",
+    "what": "permissionless evidence attach (devnet PoC, stranger-verified)",
+    "surface": "https://councilof.ai/xrpl-attest",
+    "evidence": {
+     "memo_tx": "BC767FEF6497832908B2D208101E361C58A6C0B617C5D94419F9274826A77464",
+     "credential_tx": "958BA25801A068AEA1507FC1649A862C33D59A1D715924794D98D2C66254DC4B",
+     "checked": "2026-08-25",
+     "note": "LIVE = page+record publicly resolving; ledger txs on DEVNET"
+    }
+   }
   }
  },
  "binding_principle": "BIND, don't migrate: each package is a pointer + contract + checker over the existing repo/surface. Code moves only when a checker proves the move preserved behaviour.",
