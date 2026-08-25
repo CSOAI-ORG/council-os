@@ -1,0 +1,3 @@
+[submodule "tokenization/erc3643-t-rex"]
+	path = tokenization/erc3643-t-rex
+	url = https://github.com/TokenySolutions/T-REX.git
