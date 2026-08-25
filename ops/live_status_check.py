@@ -19,10 +19,26 @@ import json, sys, urllib.request, datetime
 SPINE = "registry/spine.json"
 TODAY = datetime.date.today().isoformat()
 
+class _Redirect308(urllib.request.HTTPRedirectHandler):
+    """urllib follows 301/302/303/307 but not 308 (Permanent Redirect). Many
+    public surfaces 308 from their canonical path (e.g. /gspc -> /gspc-scoreboard),
+    so without this a genuinely-live surface is mis-recorded as GATED. Stdlib only."""
+    def http_error_308(self, req, fp, code, msg, headers):
+        newurl = headers.get("Location")
+        if not newurl:
+            return None
+        newurl = urllib.request.urljoin(req.full_url, newurl)
+        new = urllib.request.Request(newurl,
+            headers=req.headers, origin_req_host=req.origin_req_host,
+            unverifiable=True)
+        return self.parent.open(new, timeout=req.timeout)
+
+_OPENER = urllib.request.build_opener(_Redirect308())
+
 def probe(url, timeout=15):
     try:
         req = urllib.request.Request(url, headers={"User-Agent": "council-os-live-status-check/0.1"})
-        with urllib.request.urlopen(req, timeout=timeout) as r:
+        with _OPENER.open(req, timeout=timeout) as r:
             return r.status, r.read(200000)
     except Exception as e:
         return None, str(e).encode()
