@@ -33,3 +33,23 @@ Anything beyond synthetic assets goes through counsel and a sandbox
 ```
 python3 verify.py   # needs: pip install cryptography
 ```
+
+## Coverage universe (2026-08-25) — both chains
+
+Beyond the single-card PoC, the same rails now carry a **coverage declaration**
+across real, verified instruments — every status UNMEASURED, which is the point:
+an independent measurement body publishing its coverage universe in three-state
+grammar, permissionlessly, on two chains.
+
+- **XRPL** (`attest_coverage.py` → `COVERAGE-RUN.json`): 5 mainnet-verified RWA
+  issuers (RLUSD, Ondo OUSG, OpenEden TBILL, Archax×abrdn MMF, Braza USDB), each
+  confirmed live via mainnet `account_info` first (`mainnet-address-verification.json`),
+  then a signed UNMEASURED memo attached on devnet.
+- **EVM** (`eas/attest_offchain.cjs` → `eas/EAS-OFFCHAIN-RUN.json`): 3 marquee
+  contracts (BlackRock BUIDL, Franklin Templeton BENJI, Apollo ACRED) via EAS
+  **off-chain** (gasless, signed) — recipient = the verified contract, no consent,
+  throwaway demo signer (never an estate key), all signatures self-verified.
+
+Nothing here is a verdict, rating, advice, or endorsement — coverage status only.
+Mainnet publication of any *measured* verdict is gated on counsel + reframing as
+compliance-measurement (never "credit rating"), per the research's legal flags.

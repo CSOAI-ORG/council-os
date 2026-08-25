@@ -1,0 +1,44 @@
+{
+ "schema": "csoai.coverage-run/0.1",
+ "network": "XRPL DEVNET (carrier) referencing XRPL MAINNET issuers (data)",
+ "signer_kid": "cose-interop-1",
+ "signer_pub": "25456441b98690872008e303ef17bfd3864f751ca761d0402043565b1585dcea",
+ "honesty": "Coverage declaration only. Every status is UNMEASURED \u2014 no measurement of any listed instrument has been performed. Devnet carrier transactions; mainnet addresses referenced as verified data. Not investment advice, not ratings, not conformity marks, not issuer-endorsed.",
+ "attestations": [
+  {
+   "instrument": "RLUSD (Ripple USD)",
+   "mainnet_issuer": "rMxCKbEDwqr76QuheSUMdEGf4B9xJ8m5De",
+   "status": "UNMEASURED",
+   "devnet_tx": "1D981BDC1B407DAF9E190CA92DA01728E12EFB507648EB4D2F3F310B37116D06",
+   "explorer": "https://devnet.xrpl.org/transactions/1D981BDC1B407DAF9E190CA92DA01728E12EFB507648EB4D2F3F310B37116D06"
+  },
+  {
+   "instrument": "Ondo OUSG",
+   "mainnet_issuer": "rHuiXXjHLpMP8ZE9sSQU5aADQVWDwv6h5p",
+   "status": "UNMEASURED",
+   "devnet_tx": "0E1DE55938170820654AF56DF9AD42FBF2AD29395EB001B2A513EE1E82BF65B8",
+   "explorer": "https://devnet.xrpl.org/transactions/0E1DE55938170820654AF56DF9AD42FBF2AD29395EB001B2A513EE1E82BF65B8"
+  },
+  {
+   "instrument": "OpenEden TBILL",
+   "mainnet_issuer": "rJNE2NNz83GJYtWVLwMvchDWEon3huWnFn",
+   "status": "UNMEASURED",
+   "devnet_tx": "1624D2C169AC181E70A461443F02CDF0A35FE9B459A625F9B24F8C58F9C4F267",
+   "explorer": "https://devnet.xrpl.org/transactions/1624D2C169AC181E70A461443F02CDF0A35FE9B459A625F9B24F8C58F9C4F267"
+  },
+  {
+   "instrument": "Archax abrdn MMF",
+   "mainnet_issuer": "rKCu4CucpepQ6N89c8T5GuX2jkxzCST18Q",
+   "status": "UNMEASURED",
+   "devnet_tx": "FF10A7BD6ABE7CC17D393642AEE6F991035073BCA2354225721FFF23F5003DA0",
+   "explorer": "https://devnet.xrpl.org/transactions/FF10A7BD6ABE7CC17D393642AEE6F991035073BCA2354225721FFF23F5003DA0"
+  },
+  {
+   "instrument": "Braza USDB",
+   "mainnet_issuer": "rB3y9EPnq1ZrZP3aXgfyfdXQThzdXMrLMc",
+   "status": "UNMEASURED",
+   "devnet_tx": "8FC74B1F84E89C94C771403F06B20A57AC89CFEDBDD72CDBC89625E027A3370B",
+   "explorer": "https://devnet.xrpl.org/transactions/8FC74B1F84E89C94C771403F06B20A57AC89CFEDBDD72CDBC89625E027A3370B"
+  }
+ ]
+}

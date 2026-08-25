@@ -1,0 +1,27 @@
+{
+ "RLUSD (Ripple USD)": {
+  "address": "rMxCKbEDwqr76QuheSUMdEGf4B9xJ8m5De",
+  "exists_on_mainnet": true,
+  "xrp_balance": 99.85207
+ },
+ "Ondo OUSG": {
+  "address": "rHuiXXjHLpMP8ZE9sSQU5aADQVWDwv6h5p",
+  "exists_on_mainnet": true,
+  "xrp_balance": 9.999564
+ },
+ "OpenEden TBILL": {
+  "address": "rJNE2NNz83GJYtWVLwMvchDWEon3huWnFn",
+  "exists_on_mainnet": true,
+  "xrp_balance": 59.990292
+ },
+ "Archax abrdn MMF": {
+  "address": "rKCu4CucpepQ6N89c8T5GuX2jkxzCST18Q",
+  "exists_on_mainnet": true,
+  "xrp_balance": 2.092506
+ },
+ "Braza USDB": {
+  "address": "rB3y9EPnq1ZrZP3aXgfyfdXQThzdXMrLMc",
+  "exists_on_mainnet": true,
+  "xrp_balance": 499.614026
+ }
+}
