@@ -23,5 +23,10 @@
   "address": "rB3y9EPnq1ZrZP3aXgfyfdXQThzdXMrLMc",
   "exists_on_mainnet": true,
   "xrp_balance": 499.614026
+ },
+ "Braza BBRL": {
+  "address": "rH5CJsqvNqZGxrMyGaqLEoMWRYcVTAPZMt",
+  "exists_on_mainnet": true,
+  "xrp_balance": null
  }
 }
