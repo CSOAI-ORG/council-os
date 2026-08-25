@@ -1,0 +1,141 @@
+{
+ "schema": "csoai.signal-run/0.1",
+ "bottleneck": "I/O (chain reads) + deterministic grading (CPU) \u2014 GPU does not accelerate this churn",
+ "workers": 8,
+ "targets": 16,
+ "measurable_from_chain": 6,
+ "published": false,
+ "honesty": "Coverage churn only. Engine is a boundary stub here (private engine excluded); every status UNMEASURED. Mainnet publish gated on HSM key custody.",
+ "rows": [
+  {
+   "instrument": "Aviva Investors USD Liquidity Fund",
+   "reference": null,
+   "note": "no public r-address; not measurable from chain",
+   "status": "UNMEASURED",
+   "engine": "boundary-stub (private engine not in this repo)"
+  },
+  {
+   "instrument": "Ondo OUSG (Short-Term US Treasuries)",
+   "xrpl_issuer": "rHuiXXjHLpMP8ZE9sSQU5aADQVWDwv6h5p",
+   "exists": true,
+   "reference": {
+    "account_info": true
+   },
+   "status": "UNMEASURED",
+   "engine": "boundary-stub (private engine not in this repo)"
+  },
+  {
+   "instrument": "Guggenheim Digital Commercial Paper (DCP)",
+   "reference": null,
+   "note": "no public r-address; not measurable from chain",
+   "status": "UNMEASURED",
+   "engine": "boundary-stub (private engine not in this repo)"
+  },
+  {
+   "instrument": "Ripple USD (RLUSD)",
+   "xrpl_issuer": "rMxCKbEDwqr76QuheSUMdEGf4B9xJ8m5De",
+   "exists": true,
+   "reference": {
+    "account_info": true
+   },
+   "status": "UNMEASURED",
+   "engine": "boundary-stub (private engine not in this repo)"
+  },
+  {
+   "instrument": "Archax x abrdn USD Liquidity Fund",
+   "xrpl_issuer": "rKCu4CucpepQ6N89c8T5GuX2jkxzCST18Q",
+   "exists": true,
+   "reference": {
+    "account_info": true
+   },
+   "status": "UNMEASURED",
+   "engine": "boundary-stub (private engine not in this repo)"
+  },
+  {
+   "instrument": "OpenEden TBILL (TBL)",
+   "xrpl_issuer": "rJNE2NNz83GJYtWVLwMvchDWEon3huWnFn",
+   "exists": true,
+   "reference": {
+    "account_info": true
+   },
+   "status": "UNMEASURED",
+   "engine": "boundary-stub (private engine not in this repo)"
+  },
+  {
+   "instrument": "Societe Generale-FORGE EURCV",
+   "reference": null,
+   "note": "no public r-address; not measurable from chain",
+   "status": "UNMEASURED",
+   "engine": "boundary-stub (private engine not in this repo)"
+  },
+  {
+   "instrument": "Ctrl Alt / Dubai Land Department real estate",
+   "reference": null,
+   "note": "no public r-address; not measurable from chain",
+   "status": "UNMEASURED",
+   "engine": "boundary-stub (private engine not in this repo)"
+  },
+  {
+   "instrument": "SBI START tokenized bond",
+   "reference": null,
+   "note": "no public r-address; not measurable from chain",
+   "status": "UNMEASURED",
+   "engine": "boundary-stub (private engine not in this repo)"
+  },
+  {
+   "instrument": "Braza Bank USDB",
+   "xrpl_issuer": "rB3y9EPnq1ZrZP3aXgfyfdXQThzdXMrLMc",
+   "exists": true,
+   "reference": {
+    "account_info": true
+   },
+   "status": "UNMEASURED",
+   "engine": "boundary-stub (private engine not in this repo)"
+  },
+  {
+   "instrument": "Braza Bank BBRL",
+   "xrpl_issuer": "rH5CJsqvNqZGxrMyGaqLEoMWRYcVTAPZMt",
+   "exists": true,
+   "reference": {
+    "account_info": true
+   },
+   "status": "UNMEASURED",
+   "engine": "boundary-stub (private engine not in this repo)"
+  },
+  {
+   "instrument": "Justoken JMWH (energy)",
+   "reference": null,
+   "note": "no public r-address; not measurable from chain",
+   "status": "UNMEASURED",
+   "engine": "boundary-stub (private engine not in this repo)"
+  },
+  {
+   "instrument": "Ctrl Alt / Billiton diamonds",
+   "reference": null,
+   "note": "no public r-address; not measurable from chain",
+   "status": "UNMEASURED",
+   "engine": "boundary-stub (private engine not in this repo)"
+  },
+  {
+   "instrument": "GateHub XAU (gold)",
+   "reference": null,
+   "note": "no public r-address; not measurable from chain",
+   "status": "UNMEASURED",
+   "engine": "boundary-stub (private engine not in this repo)"
+  },
+  {
+   "instrument": "Schuman Financial EURoP",
+   "reference": null,
+   "note": "no public r-address; not measurable from chain",
+   "status": "UNMEASURED",
+   "engine": "boundary-stub (private engine not in this repo)"
+  },
+  {
+   "instrument": "Kyobo Life tokenized govt-bond pilot",
+   "reference": null,
+   "note": "no public r-address; not measurable from chain",
+   "status": "UNMEASURED",
+   "engine": "boundary-stub (private engine not in this repo)"
+  }
+ ]
+}
