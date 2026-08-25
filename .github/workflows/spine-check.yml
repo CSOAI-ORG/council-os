@@ -1,0 +1,21 @@
+name: spine live-status check
+on:
+  push: {branches: [main]}
+  schedule: [{cron: "17 6 * * *"}]
+  workflow_dispatch: {}
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    permissions: {contents: write}
+    steps:
+      - uses: actions/checkout@v4
+      - name: banned-strings gate
+        run: sh ops/banned_strings_check.sh
+      - name: probe every LIVE claim from outside; downgrade what fails
+        run: python3 ops/live_status_check.py
+      - name: commit evidence
+        run: |
+          git config user.name "spine-check" && git config user.email "nicholas@csoai.org"
+          git add registry/spine.json
+          git diff --cached --quiet || git commit -m "spine: live-status evidence $(date -u +%F)"
+          git push

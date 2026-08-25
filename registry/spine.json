@@ -1,0 +1,818 @@
+{
+ "schema": "csoai.spine/0.1",
+ "name": "council-os spine",
+ "generated": "2026-08-25",
+ "doctrine_ref": "MONOREPO-MASTER-SPEC-2026-08-24 (HARD DOCTRINE 1-9)",
+ "status_grammar": [
+  "LIVE",
+  "LANE-REAL",
+  "LANE-REPORTED",
+  "THEORY",
+  "GATED",
+  "UNCHECKED"
+ ],
+ "rule": "JL.5 by construction: only ops/live_status_check.py may write LIVE. Hand-edited LIVE is invalid.",
+ "public_framing": {
+  "counts": {
+   "measured": 13,
+   "total": 14
+  },
+  "note": "public grammar 13-of-14 until jail separation test (owner ruling); internal canon 22 axes"
+ },
+ "axes": [
+  {
+   "id": "gov",
+   "axis": "governance",
+   "family": "gspc",
+   "organs": {
+    "gold_bank": {
+     "what": "frozen instrument",
+     "surface": "https://huggingface.co/datasets/csoai/gspc-gov",
+     "status": "LIVE",
+     "evidence": {
+      "checked": "2026-08-25",
+      "http": 200
+     }
+    },
+    "harness": {
+     "what": "deterministic grader (GovBench)",
+     "surface": "https://councilof.ai/api/gspc",
+     "status": "LIVE",
+     "evidence": {
+      "checked": "2026-08-25",
+      "board_http": 200,
+      "axis_on_board": true
+     }
+    },
+    "specialist": {
+     "what": "per-axis model lane (RunPod)",
+     "surface": null,
+     "status": "LANE-REPORTED",
+     "note": "measure pods host-evicted 2026-08-24; watchdog sweeping"
+    },
+    "board": {
+     "what": "signed public board entry",
+     "surface": "https://councilof.ai/api/gspc",
+     "status": "LIVE",
+     "separation": "SEPARATED",
+     "evidence": {
+      "checked": "2026-08-25",
+      "board_http": 200,
+      "axis_on_board": true
+     }
+    },
+    "public_face": {
+     "what": "page + MCP/A2A endpoint",
+     "surface": "https://councilof.ai/gspc",
+     "mcp": "io.github.CSOAI-ORG/gspc",
+     "status": "LIVE",
+     "evidence": {
+      "checked": "2026-08-25",
+      "http": 200
+     }
+    }
+   }
+  },
+  {
+   "id": "agi",
+   "axis": "safety",
+   "family": "gspc",
+   "organs": {
+    "gold_bank": {
+     "what": "frozen instrument",
+     "surface": "https://huggingface.co/datasets/csoai/gspc-agi",
+     "status": "LIVE",
+     "evidence": {
+      "checked": "2026-08-25",
+      "http": 200
+     }
+    },
+    "harness": {
+     "what": "deterministic grader (DefBench)",
+     "surface": "https://councilof.ai/api/gspc",
+     "status": "LIVE",
+     "evidence": {
+      "checked": "2026-08-25",
+      "board_http": 200,
+      "axis_on_board": true
+     }
+    },
+    "specialist": {
+     "what": "per-axis model lane (RunPod)",
+     "surface": null,
+     "status": "LANE-REPORTED",
+     "note": "measure pods host-evicted 2026-08-24; watchdog sweeping"
+    },
+    "board": {
+     "what": "signed public board entry",
+     "surface": "https://councilof.ai/api/gspc",
+     "status": "LIVE",
+     "separation": "TIE",
+     "evidence": {
+      "checked": "2026-08-25",
+      "board_http": 200,
+      "axis_on_board": true
+     }
+    },
+    "public_face": {
+     "what": "page + MCP/A2A endpoint",
+     "surface": "https://councilof.ai/gspc",
+     "mcp": "io.github.CSOAI-ORG/gspc",
+     "status": "LIVE",
+     "evidence": {
+      "checked": "2026-08-25",
+      "http": 200
+     }
+    }
+   }
+  },
+  {
+   "id": "prv",
+   "axis": "provenance",
+   "family": "gspc",
+   "organs": {
+    "gold_bank": {
+     "what": "frozen instrument",
+     "surface": "https://huggingface.co/datasets/csoai/gspc-prv",
+     "status": "LIVE",
+     "evidence": {
+      "checked": "2026-08-25",
+      "http": 200
+     }
+    },
+    "harness": {
+     "what": "deterministic grader (ProvBench)",
+     "surface": "https://councilof.ai/api/gspc",
+     "status": "LIVE",
+     "evidence": {
+      "checked": "2026-08-25",
+      "board_http": 200,
+      "axis_on_board": true
+     }
+    },
+    "specialist": {
+     "what": "per-axis model lane (RunPod)",
+     "surface": null,
+     "status": "LANE-REPORTED",
+     "note": "measure pods host-evicted 2026-08-24; watchdog sweeping"
+    },
+    "board": {
+     "what": "signed public board entry",
+     "surface": "https://councilof.ai/api/gspc",
+     "status": "LIVE",
+     "separation": "TIE",
+     "evidence": {
+      "checked": "2026-08-25",
+      "board_http": 200,
+      "axis_on_board": true
+     }
+    },
+    "public_face": {
+     "what": "page + MCP/A2A endpoint",
+     "surface": "https://councilof.ai/gspc",
+     "mcp": "io.github.CSOAI-ORG/gspc",
+     "status": "LIVE",
+     "evidence": {
+      "checked": "2026-08-25",
+      "http": 200
+     }
+    }
+   }
+  },
+  {
+   "id": "asi",
+   "axis": "continuity",
+   "family": "gspc",
+   "organs": {
+    "gold_bank": {
+     "what": "frozen instrument",
+     "surface": "https://huggingface.co/datasets/csoai/gspc-asi",
+     "status": "LIVE",
+     "evidence": {
+      "checked": "2026-08-25",
+      "http": 200
+     }
+    },
+    "harness": {
+     "what": "deterministic grader (PQCBench)",
+     "surface": "https://councilof.ai/api/gspc",
+     "status": "LIVE",
+     "evidence": {
+      "checked": "2026-08-25",
+      "board_http": 200,
+      "axis_on_board": true
+     }
+    },
+    "specialist": {
+     "what": "per-axis model lane (RunPod)",
+     "surface": null,
+     "status": "LANE-REPORTED",
+     "note": "measure pods host-evicted 2026-08-24; watchdog sweeping"
+    },
+    "board": {
+     "what": "signed public board entry",
+     "surface": "https://councilof.ai/api/gspc",
+     "status": "LIVE",
+     "separation": "TIE",
+     "evidence": {
+      "checked": "2026-08-25",
+      "board_http": 200,
+      "axis_on_board": true
+     }
+    },
+    "public_face": {
+     "what": "page + MCP/A2A endpoint",
+     "surface": "https://councilof.ai/gspc",
+     "mcp": "io.github.CSOAI-ORG/gspc",
+     "status": "LIVE",
+     "evidence": {
+      "checked": "2026-08-25",
+      "http": 200
+     }
+    }
+   }
+  },
+  {
+   "id": "mcp",
+   "axis": "conformance",
+   "family": "gspc",
+   "organs": {
+    "gold_bank": {
+     "what": "frozen instrument",
+     "surface": "https://huggingface.co/datasets/csoai/gspc-mcp",
+     "status": "LIVE",
+     "evidence": {
+      "checked": "2026-08-25",
+      "http": 200
+     }
+    },
+    "harness": {
+     "what": "deterministic grader (MCPBench)",
+     "surface": "https://councilof.ai/api/gspc",
+     "status": "LIVE",
+     "evidence": {
+      "checked": "2026-08-25",
+      "board_http": 200,
+      "axis_on_board": true
+     }
+    },
+    "specialist": {
+     "what": "per-axis model lane (RunPod)",
+     "surface": null,
+     "status": "LANE-REPORTED",
+     "note": "measure pods host-evicted 2026-08-24; watchdog sweeping"
+    },
+    "board": {
+     "what": "signed public board entry",
+     "surface": "https://councilof.ai/api/gspc",
+     "status": "LIVE",
+     "separation": "TIE",
+     "evidence": {
+      "checked": "2026-08-25",
+      "board_http": 200,
+      "axis_on_board": true
+     }
+    },
+    "public_face": {
+     "what": "page + MCP/A2A endpoint",
+     "surface": "https://councilof.ai/gspc",
+     "mcp": "io.github.CSOAI-ORG/gspc",
+     "status": "LIVE",
+     "evidence": {
+      "checked": "2026-08-25",
+      "http": 200
+     }
+    }
+   }
+  },
+  {
+   "id": "oss",
+   "axis": "openness",
+   "family": "gspc",
+   "organs": {
+    "gold_bank": {
+     "what": "frozen instrument",
+     "surface": "https://huggingface.co/datasets/csoai/gspc-oss",
+     "status": "LIVE",
+     "evidence": {
+      "checked": "2026-08-25",
+      "http": 200
+     }
+    },
+    "harness": {
+     "what": "deterministic grader (OSSBench)",
+     "surface": "https://councilof.ai/api/gspc",
+     "status": "LIVE",
+     "evidence": {
+      "checked": "2026-08-25",
+      "board_http": 200,
+      "axis_on_board": true
+     }
+    },
+    "specialist": {
+     "what": "per-axis model lane (RunPod)",
+     "surface": null,
+     "status": "LANE-REPORTED",
+     "note": "measure pods host-evicted 2026-08-24; watchdog sweeping"
+    },
+    "board": {
+     "what": "signed public board entry",
+     "surface": "https://councilof.ai/api/gspc",
+     "status": "LIVE",
+     "separation": "TIE",
+     "evidence": {
+      "checked": "2026-08-25",
+      "board_http": 200,
+      "axis_on_board": true
+     }
+    },
+    "public_face": {
+     "what": "page + MCP/A2A endpoint",
+     "surface": "https://councilof.ai/gspc",
+     "mcp": "io.github.CSOAI-ORG/gspc",
+     "status": "LIVE",
+     "evidence": {
+      "checked": "2026-08-25",
+      "http": 200
+     }
+    }
+   }
+  },
+  {
+   "id": "mach",
+   "axis": "machinery-conformity",
+   "family": "gspc",
+   "organs": {
+    "gold_bank": {
+     "what": "frozen instrument",
+     "surface": "https://huggingface.co/datasets/csoai/gspc-mach",
+     "status": "LIVE",
+     "evidence": {
+      "checked": "2026-08-25",
+      "http": 200
+     }
+    },
+    "harness": {
+     "what": "deterministic grader (MachBench)",
+     "surface": "https://councilof.ai/api/gspc",
+     "status": "LIVE",
+     "evidence": {
+      "checked": "2026-08-25",
+      "board_http": 200,
+      "axis_on_board": true
+     }
+    },
+    "specialist": {
+     "what": "per-axis model lane (RunPod)",
+     "surface": null,
+     "status": "LANE-REPORTED",
+     "note": "measure pods host-evicted 2026-08-24; watchdog sweeping"
+    },
+    "board": {
+     "what": "signed public board entry",
+     "surface": "https://councilof.ai/api/gspc",
+     "status": "LIVE",
+     "separation": "TIE",
+     "evidence": {
+      "checked": "2026-08-25",
+      "board_http": 200,
+      "axis_on_board": true
+     }
+    },
+    "public_face": {
+     "what": "page + MCP/A2A endpoint",
+     "surface": "https://councilof.ai/gspc",
+     "mcp": "io.github.CSOAI-ORG/gspc",
+     "status": "LIVE",
+     "evidence": {
+      "checked": "2026-08-25",
+      "http": 200
+     }
+    }
+   }
+  },
+  {
+   "id": "care",
+   "axis": "care",
+   "family": "gspc",
+   "organs": {
+    "gold_bank": {
+     "what": "frozen instrument",
+     "surface": "https://huggingface.co/datasets/csoai/gspc-care",
+     "status": "LIVE",
+     "evidence": {
+      "checked": "2026-08-25",
+      "http": 200
+     }
+    },
+    "harness": {
+     "what": "deterministic grader (CareBench)",
+     "surface": "https://councilof.ai/api/gspc",
+     "status": "LIVE",
+     "evidence": {
+      "checked": "2026-08-25",
+      "board_http": 200,
+      "axis_on_board": true
+     }
+    },
+    "specialist": {
+     "what": "per-axis model lane (RunPod)",
+     "surface": null,
+     "status": "LANE-REPORTED",
+     "note": "measure pods host-evicted 2026-08-24; watchdog sweeping"
+    },
+    "board": {
+     "what": "signed public board entry",
+     "surface": "https://councilof.ai/api/gspc",
+     "status": "LIVE",
+     "separation": "SEPARATED",
+     "evidence": {
+      "checked": "2026-08-25",
+      "board_http": 200,
+      "axis_on_board": true
+     }
+    },
+    "public_face": {
+     "what": "page + MCP/A2A endpoint",
+     "surface": "https://councilof.ai/gspc",
+     "mcp": "io.github.CSOAI-ORG/gspc",
+     "status": "LIVE",
+     "evidence": {
+      "checked": "2026-08-25",
+      "http": 200
+     }
+    }
+   }
+  },
+  {
+   "id": "xr",
+   "axis": "cross-reality",
+   "family": "gspc",
+   "organs": {
+    "gold_bank": {
+     "what": "frozen instrument",
+     "surface": "https://huggingface.co/datasets/csoai/gspc-xr",
+     "status": "LIVE",
+     "evidence": {
+      "checked": "2026-08-25",
+      "http": 200
+     }
+    },
+    "harness": {
+     "what": "deterministic grader (XRAIV)",
+     "surface": "https://councilof.ai/api/gspc",
+     "status": "LIVE",
+     "evidence": {
+      "checked": "2026-08-25",
+      "board_http": 200,
+      "axis_on_board": true
+     }
+    },
+    "specialist": {
+     "what": "per-axis model lane (RunPod)",
+     "surface": null,
+     "status": "LANE-REPORTED",
+     "note": "measure pods host-evicted 2026-08-24; watchdog sweeping"
+    },
+    "board": {
+     "what": "signed public board entry",
+     "surface": "https://councilof.ai/api/gspc",
+     "status": "LIVE",
+     "separation": "TIE",
+     "evidence": {
+      "checked": "2026-08-25",
+      "board_http": 200,
+      "axis_on_board": true
+     }
+    },
+    "public_face": {
+     "what": "page + MCP/A2A endpoint",
+     "surface": "https://councilof.ai/gspc",
+     "mcp": "io.github.CSOAI-ORG/gspc",
+     "status": "LIVE",
+     "evidence": {
+      "checked": "2026-08-25",
+      "http": 200
+     }
+    }
+   }
+  },
+  {
+   "id": "det",
+   "axis": "detector-interop",
+   "family": "gspc",
+   "organs": {
+    "gold_bank": {
+     "what": "frozen instrument",
+     "surface": "https://huggingface.co/datasets/csoai/gspc-det",
+     "status": "LIVE",
+     "evidence": {
+      "checked": "2026-08-25",
+      "http": 200
+     }
+    },
+    "harness": {
+     "what": "deterministic grader (DetBench)",
+     "surface": "https://councilof.ai/api/gspc",
+     "status": "LIVE",
+     "evidence": {
+      "checked": "2026-08-25",
+      "board_http": 200,
+      "axis_on_board": true
+     }
+    },
+    "specialist": {
+     "what": "per-axis model lane (RunPod)",
+     "surface": null,
+     "status": "LANE-REPORTED",
+     "note": "measure pods host-evicted 2026-08-24; watchdog sweeping"
+    },
+    "board": {
+     "what": "signed public board entry",
+     "surface": "https://councilof.ai/api/gspc",
+     "status": "LIVE",
+     "separation": "TIE",
+     "evidence": {
+      "checked": "2026-08-25",
+      "board_http": 200,
+      "axis_on_board": true
+     }
+    },
+    "public_face": {
+     "what": "page + MCP/A2A endpoint",
+     "surface": "https://councilof.ai/gspc",
+     "mcp": "io.github.CSOAI-ORG/gspc",
+     "status": "LIVE",
+     "evidence": {
+      "checked": "2026-08-25",
+      "http": 200
+     }
+    }
+   }
+  },
+  {
+   "id": "art5",
+   "axis": "art5-safeguard",
+   "family": "gspc",
+   "organs": {
+    "gold_bank": {
+     "what": "frozen instrument",
+     "surface": "https://huggingface.co/datasets/csoai/gspc-art5",
+     "status": "LIVE",
+     "evidence": {
+      "checked": "2026-08-25",
+      "http": 200
+     }
+    },
+    "harness": {
+     "what": "deterministic grader (Art5Bench)",
+     "surface": "https://councilof.ai/api/gspc",
+     "status": "LIVE",
+     "evidence": {
+      "checked": "2026-08-25",
+      "board_http": 200,
+      "axis_on_board": true
+     }
+    },
+    "specialist": {
+     "what": "per-axis model lane (RunPod)",
+     "surface": null,
+     "status": "LANE-REPORTED",
+     "note": "measure pods host-evicted 2026-08-24; watchdog sweeping"
+    },
+    "board": {
+     "what": "signed public board entry",
+     "surface": "https://councilof.ai/api/gspc",
+     "status": "LIVE",
+     "separation": "TIE",
+     "evidence": {
+      "checked": "2026-08-25",
+      "board_http": 200,
+      "axis_on_board": true
+     }
+    },
+    "public_face": {
+     "what": "page + MCP/A2A endpoint",
+     "surface": "https://councilof.ai/gspc",
+     "mcp": "io.github.CSOAI-ORG/gspc",
+     "status": "LIVE",
+     "evidence": {
+      "checked": "2026-08-25",
+      "http": 200
+     }
+    }
+   }
+  },
+  {
+   "id": "swarm",
+   "axis": "swarm",
+   "family": "gspc",
+   "organs": {
+    "gold_bank": {
+     "what": "frozen instrument",
+     "surface": "https://huggingface.co/datasets/csoai/gspc-swarm",
+     "status": "LIVE",
+     "evidence": {
+      "checked": "2026-08-25",
+      "http": 200
+     }
+    },
+    "harness": {
+     "what": "deterministic grader (SwarmBench v2b)",
+     "surface": "https://councilof.ai/api/gspc",
+     "status": "LIVE",
+     "evidence": {
+      "checked": "2026-08-25",
+      "board_http": 200,
+      "axis_on_board": true
+     }
+    },
+    "specialist": {
+     "what": "per-axis model lane (RunPod)",
+     "surface": null,
+     "status": "LANE-REPORTED",
+     "note": "measure pods host-evicted 2026-08-24; watchdog sweeping"
+    },
+    "board": {
+     "what": "signed public board entry",
+     "surface": "https://councilof.ai/api/gspc",
+     "status": "LIVE",
+     "separation": "SEPARATED",
+     "evidence": {
+      "checked": "2026-08-25",
+      "board_http": 200,
+      "axis_on_board": true
+     }
+    },
+    "public_face": {
+     "what": "page + MCP/A2A endpoint",
+     "surface": "https://councilof.ai/gspc",
+     "mcp": "io.github.CSOAI-ORG/gspc",
+     "status": "LIVE",
+     "evidence": {
+      "checked": "2026-08-25",
+      "http": 200
+     }
+    }
+   }
+  },
+  {
+   "id": "affect",
+   "axis": "affect",
+   "family": "gspc",
+   "organs": {
+    "gold_bank": {
+     "what": "frozen instrument",
+     "surface": "https://huggingface.co/datasets/csoai/gspc-affect",
+     "status": "LIVE",
+     "evidence": {
+      "checked": "2026-08-25",
+      "http": 200
+     }
+    },
+    "harness": {
+     "what": "deterministic grader (AffectBench)",
+     "surface": "https://councilof.ai/api/gspc",
+     "status": "LIVE",
+     "evidence": {
+      "checked": "2026-08-25",
+      "board_http": 200,
+      "axis_on_board": true
+     }
+    },
+    "specialist": {
+     "what": "per-axis model lane (RunPod)",
+     "surface": null,
+     "status": "LANE-REPORTED",
+     "note": "measure pods host-evicted 2026-08-24; watchdog sweeping"
+    },
+    "board": {
+     "what": "signed public board entry",
+     "surface": "https://councilof.ai/api/gspc",
+     "status": "LIVE",
+     "separation": "SEPARATED",
+     "evidence": {
+      "checked": "2026-08-25",
+      "board_http": 200,
+      "axis_on_board": true
+     }
+    },
+    "public_face": {
+     "what": "page + MCP/A2A endpoint",
+     "surface": "https://councilof.ai/gspc",
+     "mcp": "io.github.CSOAI-ORG/gspc",
+     "status": "LIVE",
+     "evidence": {
+      "checked": "2026-08-25",
+      "http": 200
+     }
+    }
+   }
+  },
+  {
+   "id": "jail",
+   "axis": "jail",
+   "family": "gspc",
+   "organs": {
+    "gold_bank": {
+     "what": "frozen instrument",
+     "surface": "https://huggingface.co/datasets/csoai/gspc-jail",
+     "status": "LIVE",
+     "evidence": {
+      "checked": "2026-08-25",
+      "http": 200
+     }
+    },
+    "harness": {
+     "what": "deterministic grader (GoldBank-Detector)",
+     "surface": "https://councilof.ai/api/gspc",
+     "status": "LIVE",
+     "evidence": {
+      "checked": "2026-08-25",
+      "board_http": 200,
+      "axis_on_board": true
+     }
+    },
+    "specialist": {
+     "what": "per-axis model lane (RunPod)",
+     "surface": null,
+     "status": "LANE-REPORTED",
+     "note": "measure pods host-evicted 2026-08-24; watchdog sweeping"
+    },
+    "board": {
+     "what": "signed public board entry",
+     "surface": "https://councilof.ai/api/gspc",
+     "status": "LIVE",
+     "separation": "UNTESTED",
+     "evidence": {
+      "checked": "2026-08-25",
+      "board_http": 200,
+      "axis_on_board": true
+     }
+    },
+    "public_face": {
+     "what": "page + MCP/A2A endpoint",
+     "surface": "https://councilof.ai/gspc",
+     "mcp": "io.github.CSOAI-ORG/gspc",
+     "status": "LIVE",
+     "evidence": {
+      "checked": "2026-08-25",
+      "http": 200
+     }
+    }
+   }
+  }
+ ],
+ "lanes": {
+  "trust": {
+   "packages": [
+    "cards",
+    "sign",
+    "verify",
+    "did",
+    "scitt",
+    "frozen-vectors",
+    "ots-anchor",
+    "corrections-ledger",
+    "transparency-log"
+   ],
+   "bind": "existing artifacts: councilof-ai@conformance-runs/docs/interop (Merkle log, key-lifecycle, COSE_Sign1) + docs/card-conformance corpus v1.0.0"
+  },
+  "connect": {
+   "packages": [
+    "mcp-server",
+    "a2a-bridge",
+    "agui-wire",
+    "embed-badge",
+    "openapi",
+    "llms-txt",
+    "agent-cards"
+   ],
+   "bind": "csoai-gspc-mcp v1.0.x live in MCP registry; a2a card GATED on P0-1 did.json"
+  },
+  "finance": {
+   "packages": [
+    "acord-grlc-mapper",
+    "lloyds-gateway-prep",
+    "trace-consumer",
+    "firds-fitrs-consumer",
+    "emir-tr-aggregates",
+    "iso20022-mapper",
+    "open-banking",
+    "ratings-distribution"
+   ],
+   "status": "LANE-REAL max; no financial axis has a public signed board \u2014 never claim LIVE here until one does"
+  },
+  "economy": {
+   "packages": [
+    "x402-receipt",
+    "x402-wrap",
+    "abci-bridge",
+    "libp2p-agent-mesh"
+   ],
+   "bind": "existing csoai-* repos folded in, not rewritten"
+  }
+ },
+ "binding_principle": "BIND, don't migrate: each package is a pointer + contract + checker over the existing repo/surface. Code moves only when a checker proves the move preserved behaviour.",
+ "last_check": "2026-08-25"
+}
