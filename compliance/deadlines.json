@@ -1,0 +1,77 @@
+{
+  "$comment": "Machine-readable dated compliance obligations for the Council of AI attestation engine. Dates re-verify against official texts before external use. status: one of 'not-started' | 'in-progress' | 'done' | 'monitoring'.",
+  "pack_date": "2026-08-25",
+  "owner": "CSOAI Ltd (UK #16939677)",
+  "obligations": [
+    {
+      "id": "eu-ai-act-gpai-enforcement",
+      "name": "EU AI Act — GPAI enforcement powers live",
+      "date": "2026-08-02",
+      "regulation": "Regulation (EU) 2024/1689 (AI Act)",
+      "obligation": "AI Office may request documentation, run/require evaluations, and restrict or withdraw GPAI models. Fines up to EUR 15,000,000 or 3% of total worldwide annual turnover, whichever is higher.",
+      "our_action": "Populate compliance/eu-ai-act-gpai.md model-map with real models; ensure every model-calling component has a portability fallback; confirm deployer-vs-provider classification.",
+      "status": "in-progress",
+      "doc": "eu-ai-act-gpai.md"
+    },
+    {
+      "id": "cra-notified-body",
+      "name": "CRA — notified-body / conformity-assessment provisions apply",
+      "date": "2026-06-11",
+      "regulation": "Regulation (EU) 2024/2847 (Cyber Resilience Act)",
+      "obligation": "Conformity-assessment framework and notified-body provisions in force; relevant if the engine is classified important/critical.",
+      "our_action": "Confirm which distribution modes (white-label/licensed) cross the CRA 'manufacturer placing a product on the market' threshold.",
+      "status": "not-started",
+      "doc": "cra-sbom-workflow.md"
+    },
+    {
+      "id": "cra-vuln-reporting",
+      "name": "CRA — vulnerability & incident reporting to ENISA applies",
+      "date": "2026-09-11",
+      "regulation": "Regulation (EU) 2024/2847 (Cyber Resilience Act)",
+      "obligation": "24h early warning / 72h notification / 14-day final report to ENISA (and national CSIRT) for actively exploited vulnerabilities and severe incidents.",
+      "our_action": "Stand up the ENISA reporting runbook: assign roles, register ENISA platform access, generate+sign SBOM, add SCA gate to CI, create incident register. Operational by 2026-09-11.",
+      "status": "not-started",
+      "doc": "cra-sbom-workflow.md"
+    },
+    {
+      "id": "cra-full-conformity",
+      "name": "CRA — full conformity obligations apply",
+      "date": "2027-12-11",
+      "regulation": "Regulation (EU) 2024/2847 (Cyber Resilience Act)",
+      "obligation": "Full essential cybersecurity requirements, CE marking, and technical-documentation obligations in force.",
+      "our_action": "Complete conformity assessment path for the shipped product; maintain signed SBOM + documentation.",
+      "status": "not-started",
+      "doc": "cra-sbom-workflow.md"
+    },
+    {
+      "id": "xrpl-js-cve-2025-32965",
+      "name": "xrpl.js supply-chain hygiene (CVE-2025-32965)",
+      "date": "2026-08-25",
+      "regulation": "n/a — dependency hygiene",
+      "obligation": "Compromised xrpl versions 4.2.1-4.2.4 and 2.14.2; fixed in 4.2.5/2.14.3; current stable 5.x. Already patched upstream.",
+      "our_action": "When XRPL publisher stage is wired, pin xrpl >= 4.2.5 (prefer 5.x); verify resolved version; add SCA gate; use least-privilege npm tokens (npm 2FA/token changes ~Aug 2026, direct publish ~Jan 2027).",
+      "status": "monitoring",
+      "doc": "xrpl-js-hygiene.md"
+    },
+    {
+      "id": "npm-2fa-token-changes",
+      "name": "npm 2FA / granular token tightening",
+      "date": "2026-08-01",
+      "regulation": "n/a — registry policy (npm)",
+      "obligation": "npm tightening of 2FA-on-publish and granular access token lifetimes (approximate date, verify against npm changelog).",
+      "our_action": "Audit CI npm tokens; rotate to short-lived granular tokens; enable 2FA-on-publish.",
+      "status": "not-started",
+      "doc": "xrpl-js-hygiene.md"
+    },
+    {
+      "id": "npm-direct-trusted-publishing",
+      "name": "npm move toward direct/trusted publishing",
+      "date": "2027-01-01",
+      "regulation": "n/a — registry policy (npm)",
+      "obligation": "Shift toward trusted/direct publishing reducing reliance on long-lived tokens (approximate date, verify against npm changelog).",
+      "our_action": "If we publish any package, plan trusted/OIDC publishing from CI rather than stored tokens.",
+      "status": "not-started",
+      "doc": "xrpl-js-hygiene.md"
+    }
+  ]
+}
