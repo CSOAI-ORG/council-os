@@ -1,0 +1,102 @@
+{
+  "_doc": "Registry of EXTERNAL third-party indices cited as CONTEXT ONLY. Never inputs to any Council of AI signed attestation. See context/README.md for the firewall doctrine. Every market-size figure is flagged is_projection:true. Every entry MUST carry a citation_note or context/firewall.py fails.",
+  "firewall": "contextual — not part of the signed attestation",
+  "types": [
+    "labor-economic",
+    "humanoid-robotics",
+    "ai-eval-human-baseline",
+    "benchmark-governance"
+  ],
+  "indices": [
+    {
+      "name": "Anthropic Economic Index (AEI)",
+      "publisher": "Anthropic",
+      "url": "https://www.anthropic.com/economic-index",
+      "what_it_measures": "How AI use maps onto real-world tasks and occupations, derived from anonymized Claude.ai conversations mapped to O*NET tasks and BLS occupational categories.",
+      "cadence": "periodic reports (dataset open-sourced)",
+      "type": "labor-economic",
+      "is_projection": false,
+      "citation_note": "Launched 2025-02-10; underlying dataset open-sourced by Anthropic; task mapping uses U.S. DoL O*NET and BLS occupational taxonomies. Contextual signal only."
+    },
+    {
+      "name": "ILO Working Paper 140 — Generative AI and Jobs",
+      "publisher": "International Labour Organization (ILO)",
+      "url": "https://doi.org/10.54394/HETP0387",
+      "what_it_measures": "Global exposure of occupations/tasks to generative AI (augmentation vs. automation potential), by gender and income group.",
+      "cadence": "one-off working paper (updated revisions)",
+      "type": "labor-economic",
+      "is_projection": false,
+      "citation_note": "doi:10.54394/HETP0387, published 2025-05-20. Reported finding: roughly 1 in 4 workers have some GenAI exposure and about 3.3% fall in the highest-exposure category. Exposure estimate, not an employment forecast. Contextual signal only."
+    },
+    {
+      "name": "WEF Future of Jobs Report 2025",
+      "publisher": "World Economic Forum (WEF)",
+      "url": "https://www.weforum.org/publications/the-future-of-jobs-report-2025/",
+      "what_it_measures": "Employer-surveyed expectations of labour-market disruption, job creation and displacement, and skill shifts to 2030.",
+      "cadence": "biennial",
+      "type": "labor-economic",
+      "is_projection": true,
+      "citation_note": "Published 2025-01-08. Projection: ~22% of jobs disrupted by 2030, with roughly +78M net new jobs (170M created, 92M displaced). Employer-survey projection, not a measured outcome. Contextual signal only."
+    },
+    {
+      "name": "OECD AI Exposure Measure / AI Capability Gap Index",
+      "publisher": "OECD",
+      "url": "https://www.oecd.org/en/publications/oecd-artificial-intelligence-papers_dc4c9c9d-en.html",
+      "what_it_measures": "Occupational exposure to AI capabilities and the gap between current AI capability and the abilities occupations require.",
+      "cadence": "OECD AI Papers series (periodic)",
+      "type": "labor-economic",
+      "is_projection": false,
+      "citation_note": "OECD Artificial Intelligence Papers No. 59 (2026). Exposure/capability-gap measure; verify exact figures against the published paper before quoting. Contextual signal only."
+    },
+    {
+      "name": "Stanford HAI AI Index 2026",
+      "publisher": "Stanford Institute for Human-Centered AI (HAI)",
+      "url": "https://aiindex.stanford.edu/",
+      "what_it_measures": "Annual cross-cutting compendium of AI metrics: technical performance, economy, investment, policy, education, and responsible-AI indicators.",
+      "cadence": "annual",
+      "type": "benchmark-governance",
+      "is_projection": false,
+      "citation_note": "Stanford HAI AI Index Report 2026 edition. Aggregates third-party sources; treat each cited figure by its own provenance. Contextual signal only."
+    },
+    {
+      "name": "Goldman Sachs — Humanoid robot: The AI accelerant",
+      "publisher": "Goldman Sachs Research",
+      "url": "https://www.goldmansachs.com/insights/articles/the-global-market-for-robots-could-reach-38-billion-by-2035",
+      "what_it_measures": "Projected total addressable market (TAM) for humanoid robots.",
+      "cadence": "one-off research note (revised)",
+      "type": "humanoid-robotics",
+      "is_projection": true,
+      "citation_note": "Published February 2024. PROJECTION: base-case TAM ~$38B by 2035, bull-case ~$154B by 2035. Scenario estimate, not a measurement. Contextual signal only."
+    },
+    {
+      "name": "Morgan Stanley — Humanoid robots: The $5 Trillion Global Market",
+      "publisher": "Morgan Stanley Research",
+      "url": "https://www.morganstanley.com/insights/articles/humanoid-robot-market-5-trillion-by-2050",
+      "what_it_measures": "Projected long-run global market size for humanoid robots.",
+      "cadence": "one-off research note",
+      "type": "humanoid-robotics",
+      "is_projection": true,
+      "citation_note": "Published 2025-04-29. PROJECTION: ~$5T global market by 2050. Long-horizon scenario estimate, not a measurement. Contextual signal only."
+    },
+    {
+      "name": "Humanity's Last Exam (HLE)",
+      "publisher": "Center for AI Safety (CAIS) & Scale AI",
+      "url": "https://lastexam.ai/",
+      "what_it_measures": "Frontier expert-level academic benchmark across many domains; provides a human-expert baseline against which model performance is compared.",
+      "cadence": "versioned benchmark",
+      "type": "ai-eval-human-baseline",
+      "is_projection": false,
+      "citation_note": "Human-expert baseline reported around ~90%. Note: independent review found an error rate on the order of ~30% on portions of the question set, so the human baseline is contested; cite with that caveat. Contextual signal only."
+    },
+    {
+      "name": "GPQA-Diamond",
+      "publisher": "GPQA authors (Rein et al.)",
+      "url": "https://arxiv.org/abs/2311.12022",
+      "what_it_measures": "Graduate-level, Google-proof expert QA in biology, physics, and chemistry; the Diamond subset is the hardest, highest-agreement slice.",
+      "cadence": "static benchmark",
+      "type": "ai-eval-human-baseline",
+      "is_projection": false,
+      "citation_note": "arXiv:2311.12022. Human baselines: domain experts ~65-74%; skilled non-experts ~34% even with web access. Baseline measurement from the paper. Contextual signal only."
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "_doc": "Free official regulation feeds polled by regwatch/watch.py. Backbone is free + official (no vendor dependency). Paid RegTech is reserved for gap jurisdictions only. See regwatch/README.md.",
+  "feeds": [
+    {
+      "name": "EUR-Lex CELLAR",
+      "url": "https://publications.europa.eu/webapi/rdf/sparql",
+      "content_url": "https://eur-lex.europa.eu/",
+      "format": "SPARQL + REST (content negotiation: RDF/XML, JSON-LD, Notice)",
+      "auth": "none",
+      "cadence": "updates within hours of publication",
+      "jurisdiction": "EU",
+      "coverage": "EU legal corpus, ~2.7M works (regulations, directives, decisions, case-law, treaties)"
+    },
+    {
+      "name": "FederalRegister.gov",
+      "url": "https://www.federalregister.gov/api/v1/documents.json",
+      "content_url": "https://www.federalregister.gov/",
+      "format": "REST JSON",
+      "auth": "none",
+      "cadence": "daily (business days)",
+      "jurisdiction": "US-federal",
+      "coverage": "US Federal Register: final rules, proposed rules, notices, presidential documents"
+    },
+    {
+      "name": "eCFR",
+      "url": "https://www.ecfr.gov/api/versioner/v1/",
+      "content_url": "https://www.ecfr.gov/",
+      "format": "REST JSON/XML",
+      "auth": "none",
+      "cadence": "continuously updated; daily reconciliation",
+      "jurisdiction": "US-federal",
+      "coverage": "US Code of Federal Regulations, current and point-in-time historical"
+    },
+    {
+      "name": "regulations.gov",
+      "url": "https://api.regulations.gov/v4/documents",
+      "content_url": "https://www.regulations.gov/",
+      "format": "REST JSON (JSON:API)",
+      "auth": "key (free; DEMO_KEY usable for light/testing use)",
+      "cadence": "continuous",
+      "jurisdiction": "US-federal",
+      "coverage": "US rulemaking dockets, regulatory documents, and public comments"
+    },
+    {
+      "name": "IOSCO publications",
+      "url": "https://www.iosco.org/publications/",
+      "content_url": "https://www.iosco.org/",
+      "format": "HTML listing / publication feed",
+      "auth": "none",
+      "cadence": "irregular (on publication)",
+      "jurisdiction": "international",
+      "coverage": "International Organization of Securities Commissions: standards, reports, consultation papers"
+    },
+    {
+      "name": "BIS publications",
+      "url": "https://www.bis.org/doclist/all_publications.rss",
+      "content_url": "https://www.bis.org/",
+      "format": "RSS / HTML listing",
+      "auth": "none",
+      "cadence": "irregular (on publication)",
+      "jurisdiction": "international",
+      "coverage": "Bank for International Settlements: Basel Committee standards, working papers, guidance"
+    }
+  ],
+  "paid_regtech_gap_only": [
+    {
+      "name": "Thomson Reuters Regulatory Intelligence",
+      "note": "Reserved for gap jurisdictions the free feeds do not cover. Not part of the free backbone."
+    },
+    {
+      "name": "Corlytics",
+      "note": "Reserved for gap jurisdictions the free feeds do not cover. Not part of the free backbone."
+    }
+  ]
+}
