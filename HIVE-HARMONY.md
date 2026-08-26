@@ -4,7 +4,10 @@ One standing rule-set so every agent in the fleet works as hives in harmony, nev
 Negative case study: the councilof-ai master war of Aug 2026 — two remote agents counter-pushing
 "restore exact-150 guard" vs "restore protect-verified-335" wave after wave, until the owner
 measured the bytes and ruled (BOARD-RULING.md, councilof-ai): **150 is a strict subset of 335;
-the union is the 335 verified board; the war machinery was deleted; the guard is the only
+> **SUPERSEDED 2026-08-26.** The 335 union ruling was an overclaim: `"signed": true` is a
+> boolean flag, not a signature, and the 185 candidate cards could not be verified against the
+> card store. FINAL: board frozen at the **verifiable floor of 150** (councilof-ai/BOARD-RULING.md).
+> The exact-150 floor workflows remain in place and enforce that freeze — they are not warring.
 adjudicator.** Every rule below exists so that war cannot recur.
 
 ## 1. Identity — declare before acting
