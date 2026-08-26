@@ -1,0 +1,25 @@
+{
+ "schema": "csoai.coverage-signature/0.1",
+ "signs": "economy/COVERAGE.json",
+ "signed_at_utc": "2026-08-26T10:58:00+00:00",
+ "algorithm": "Ed25519 (RFC 8032) over the 32 raw bytes of the SHA-256 digest of the signed file",
+ "payload_sha256": "d5d439bbe27a9bfb922a336272a9a71949878ff5400c6311862fa27b22314667",
+ "signature_b64": "Yg0LkfpZN/a8nm+3l4+UgLDJlg76J/FtTF/aki2IPcVwVAfYUCuTWsN1iSPL11E5FMuj3ZkEd/0VUlDlTBfiCQ==",
+ "public_key_hex": "ff6a11a75668960e47b319056e1b8ef71af27e5d6b4b8f0f35dbedcff0b941e9",
+ "keyid": "sha256:51f8b46406225a19911dc775bc26cfc0ba9f738f0d50f1b7e24c68effee90b20",
+ "custody": {
+  "key_id": "coverage-onchain-2026",
+  "kind": "3-party threshold Ed25519 (Coinbase cb-mpc, additive shares)",
+  "parties": 3,
+  "host": "oracle-micro-2, 141.147.73.85, uk-london-1 — the owner's own Oracle Cloud tenancy",
+  "created_by": "distributed key generation inside the custody; no private scalar was ever assembled on any machine",
+  "shares": "3 x 242-byte 0600 blobs on the custody host; signing requires all 3; no endpoint returns share bytes",
+  "anvil": "The existing estate signing key was NOT used, NOT read, NOT copied and NOT derived from. This is a NEW key with its own public key, published here alongside — never replacing — any existing one."
+ },
+ "verification": {
+  "command": "python3 economy/verify_coverage.py",
+  "dependencies": "Python standard library + `cryptography` only. No estate package is imported or needed.",
+  "note": "Threshold EdDSA does not use RFC 8032's deterministic nonce derivation, but verification consumes only R, s and A — so a stock Ed25519 verifier is correct and unaware that MPC was involved."
+ },
+ "honesty": "This signature attests only that Council of AI published this exact coverage file. It is not a verdict, rating, score, ranking, endorsement or advice about any instrument named inside it."
+}

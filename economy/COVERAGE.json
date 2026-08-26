@@ -1,0 +1,1091 @@
+{
+ "schema": "csoai.onchain-coverage/0.1",
+ "generated_at_utc": "2026-08-26T10:56:52+00:00",
+ "regenerate_command": "python3 economy/build_coverage.py > economy/COVERAGE.json",
+ "regenerated_by": "council-os/economy/build_coverage.py (stdlib only, no key, read-only)",
+ "coverage_claim": "Council of AI has attached signed, independently re-verifiable coverage records to the XRP Ledger for 6 tokenized real-world-asset issuers, and has measured deterministic on-chain control facts for those same 6. The attestation transactions are on XRPL DEVNET; the issuer accounts and the control facts are read from XRPL MAINNET. Nothing is attested on any Ethereum chain. No risk verdict, rating, score, ranking or opinion on any named instrument has been produced, and none may be cited.",
+ "doctrine": {
+  "attest_never_tokenize": "Council of AI is a trusted issuer of claims. A regulated partner issues instruments. Nothing here mints, transfers, holds, prices or represents a security.",
+  "xrpl_mainnet": "PLANNED, NOT LIVE. Every XRPL attestation in this file is on DEVNET. No mainnet write has been made.",
+  "ethereum": "NOT-BUILT. No EAS schema is registered, no attestation exists on any EVM chain, and no estate code path reaches EAS. Any first write is owner-gated.",
+  "never_a_credit_rating": "Control facts are disclosure measurements read from a public ledger. They are not a rating, not advice, not an endorsement, and not a verdict on any named security. Risk verdicts stay UNMEASURED pending counsel.",
+  "unmeasured_is_first_class": "10 of the 16 named XRPL instruments have no locatable public issuer address and are recorded NOT-BUILT. Nothing was invented to reach a count, and no zero was fabricated."
+ },
+ "totals": {
+  "items": 20,
+  "by_state": {
+   "NOT-BUILT": 13,
+   "VERIFIED": 7
+  },
+  "xrpl_instruments_named": 16,
+  "xrpl_instruments_verified_on_chain_today": 6,
+  "xrpl_instruments_never_attested": 10,
+  "evm_attestations_verifiable": 0,
+  "eas_schemas_registered": 0
+ },
+ "axes_this_evidence_can_support": {
+  "MEASURED_eligible": [
+   {
+    "axis_family": "on-chain provenance / issuer-control disclosure",
+    "population": "6 XRPL mainnet RWA issuers",
+    "basis": "deterministic account-root flags + declared Domain, re-read from XRPL mainnet at build time, zero drift",
+    "caveat": "devnet carrier; a mainnet-published verdict is not claimed"
+   }
+  ],
+  "MUST_STAY_UNMEASURED": [
+   "any risk / creditworthiness / solvency axis on a named instrument (counsel gate)",
+   "any EVM or Ethereum-side coverage axis (nothing exists on any EVM chain)",
+   "reserve adequacy, redemption terms, off-chain disclosure quality (not measured by anything in this file)",
+   "the 10 XRPL instruments with no locatable issuer address"
+  ]
+ },
+ "signing": {
+  "how": "The bytes of this file are hashed SHA-256 and that digest is signed by the 3-party MPC custody on the owner's Oracle host. The signature lives in COVERAGE.sig.json.",
+  "anvil": "The existing estate signing key is NOT used and NOT touched. The custody key was created inside the custody by a distributed key generation; no private scalar was ever assembled on any machine.",
+  "verify": "python3 economy/verify_coverage.py  (stdlib + cryptography only)"
+ },
+ "stable_digest_sha256": "57dc4e55f0ebae50a163c06752a1a8cbabf7cce233428409cc7d9c8e79085c7c",
+ "stable_view": [
+  {
+   "chain": "EVM / EAS",
+   "network": "mainnet + testnet (probed: ethereum-mainnet, sepolia, base-mainnet)",
+   "instrument": "EAS schema registration for the CSOAI coverage claim",
+   "subject_id": "string asset,bytes32 verdictSha256,uint8 statusCode,string statusText,string reportUri",
+   "state": "NOT-BUILT",
+   "audit_state": "VERIFIED"
+  },
+  {
+   "chain": "EVM / EAS",
+   "network": "n/a",
+   "instrument": "estate code that talks to EAS",
+   "subject_id": "gspc_measurement.anchor backend 'eas'",
+   "state": "NOT-BUILT",
+   "audit_state": "VERIFIED"
+  },
+  {
+   "chain": "EVM / EAS",
+   "network": "off-chain (no chain write)",
+   "instrument": "off-chain EIP-712 coverage attestations (BUIDL, BENJI, ACRED)",
+   "subject_id": "BlackRock BUIDL=0x7712c34205737192402172409a8f7ccef8aa2aec, Franklin Templeton BENJI=0x3DDc84940Ab509C11B20B76B466933f40b750dc9, Apollo ACRED=0x17418038ecF73BA4026c4f428547BF099706F27B",
+   "state": "NOT-BUILT",
+   "audit_state": "UNRESOLVABLE"
+  },
+  {
+   "chain": "XRPL",
+   "network": "devnet (attestation carrier) / mainnet (subject + facts)",
+   "instrument": "Archax x abrdn USD Liquidity Fund",
+   "subject_id": "rKCu4CucpepQ6N89c8T5GuX2jkxzCST18Q",
+   "state": "VERIFIED",
+   "audit_state": "VERIFIED"
+  },
+  {
+   "chain": "XRPL",
+   "network": null,
+   "instrument": "Aviva Investors USD Liquidity Fund",
+   "subject_id": null,
+   "state": "NOT-BUILT",
+   "audit_state": "NOT-BUILT"
+  },
+  {
+   "chain": "XRPL",
+   "network": "devnet (attestation carrier) / mainnet (subject + facts)",
+   "instrument": "Braza Bank BBRL",
+   "subject_id": "rH5CJsqvNqZGxrMyGaqLEoMWRYcVTAPZMt",
+   "state": "VERIFIED",
+   "audit_state": "VERIFIED"
+  },
+  {
+   "chain": "XRPL",
+   "network": "devnet (attestation carrier) / mainnet (subject + facts)",
+   "instrument": "Braza Bank USDB",
+   "subject_id": "rB3y9EPnq1ZrZP3aXgfyfdXQThzdXMrLMc",
+   "state": "VERIFIED",
+   "audit_state": "VERIFIED"
+  },
+  {
+   "chain": "XRPL",
+   "network": null,
+   "instrument": "Ctrl Alt / Billiton diamonds",
+   "subject_id": null,
+   "state": "NOT-BUILT",
+   "audit_state": "NOT-BUILT"
+  },
+  {
+   "chain": "XRPL",
+   "network": null,
+   "instrument": "Ctrl Alt / Dubai Land Department real estate",
+   "subject_id": null,
+   "state": "NOT-BUILT",
+   "audit_state": "NOT-BUILT"
+  },
+  {
+   "chain": "XRPL",
+   "network": null,
+   "instrument": "GateHub XAU (gold)",
+   "subject_id": null,
+   "state": "NOT-BUILT",
+   "audit_state": "NOT-BUILT"
+  },
+  {
+   "chain": "XRPL",
+   "network": null,
+   "instrument": "Guggenheim Digital Commercial Paper (DCP)",
+   "subject_id": null,
+   "state": "NOT-BUILT",
+   "audit_state": "NOT-BUILT"
+  },
+  {
+   "chain": "XRPL",
+   "network": null,
+   "instrument": "Justoken JMWH (energy)",
+   "subject_id": null,
+   "state": "NOT-BUILT",
+   "audit_state": "NOT-BUILT"
+  },
+  {
+   "chain": "XRPL",
+   "network": null,
+   "instrument": "Kyobo Life tokenized govt-bond pilot",
+   "subject_id": null,
+   "state": "NOT-BUILT",
+   "audit_state": "NOT-BUILT"
+  },
+  {
+   "chain": "XRPL",
+   "network": "devnet (attestation carrier) / mainnet (subject + facts)",
+   "instrument": "Ondo OUSG (Short-Term US Treasuries)",
+   "subject_id": "rHuiXXjHLpMP8ZE9sSQU5aADQVWDwv6h5p",
+   "state": "VERIFIED",
+   "audit_state": "VERIFIED"
+  },
+  {
+   "chain": "XRPL",
+   "network": "devnet (attestation carrier) / mainnet (subject + facts)",
+   "instrument": "OpenEden TBILL (TBL)",
+   "subject_id": "rJNE2NNz83GJYtWVLwMvchDWEon3huWnFn",
+   "state": "VERIFIED",
+   "audit_state": "VERIFIED"
+  },
+  {
+   "chain": "XRPL",
+   "network": "devnet (attestation carrier) / mainnet (subject + facts)",
+   "instrument": "Ripple USD (RLUSD)",
+   "subject_id": "rMxCKbEDwqr76QuheSUMdEGf4B9xJ8m5De",
+   "state": "VERIFIED",
+   "audit_state": "VERIFIED"
+  },
+  {
+   "chain": "XRPL",
+   "network": null,
+   "instrument": "SBI START tokenized bond",
+   "subject_id": null,
+   "state": "NOT-BUILT",
+   "audit_state": "NOT-BUILT"
+  },
+  {
+   "chain": "XRPL",
+   "network": null,
+   "instrument": "Schuman Financial EURoP",
+   "subject_id": null,
+   "state": "NOT-BUILT",
+   "audit_state": "NOT-BUILT"
+  },
+  {
+   "chain": "XRPL",
+   "network": null,
+   "instrument": "Societe Generale-FORGE EURCV",
+   "subject_id": null,
+   "state": "NOT-BUILT",
+   "audit_state": "NOT-BUILT"
+  },
+  {
+   "chain": "XRPL",
+   "network": "devnet",
+   "instrument": "permissionless-attach capability PoC (synthetic subject)",
+   "subject_id": "rBkftm76iPPjT3zBnfS7yLiMzK4tBZkgCs",
+   "state": "VERIFIED",
+   "audit_state": "VERIFIED"
+  }
+ ],
+ "items": [
+  {
+   "chain": "XRPL",
+   "instrument": "Aviva Investors USD Liquidity Fund",
+   "category": "institutional-fund",
+   "subject_id": null,
+   "artifact": "economy/xrpl-attest/REGISTRY.json",
+   "network": null,
+   "measured": [],
+   "measured_at": null,
+   "state": "NOT-BUILT",
+   "audit_state": "NOT-BUILT",
+   "note": "no public XRPL r-address independently locatable; named in the coverage universe, never attested, never faked"
+  },
+  {
+   "chain": "XRPL",
+   "instrument": "Ondo OUSG (Short-Term US Treasuries)",
+   "category": "treasury",
+   "subject_id": "rHuiXXjHLpMP8ZE9sSQU5aADQVWDwv6h5p",
+   "artifact": "economy/xrpl-attest/REGISTRY.json + COVERAGE-RUN.json + FINANCIAL-MEASURE-RUN.json",
+   "network": "devnet (attestation carrier) / mainnet (subject + facts)",
+   "measured": [
+    "existence of the mainnet issuer account",
+    "account-root control flags (RequireAuth / NoFreeze / GlobalFreeze / DefaultRipple / DisallowXRP / RequireDest)",
+    "declared identity Domain"
+   ],
+   "not_measured": [
+    "risk verdict on the instrument (UNMEASURED -- requires counsel)",
+    "reserve adequacy, redemption terms, issuer solvency",
+    "anything resembling a credit rating"
+   ],
+   "measured_at": "2026-08-25",
+   "evidence": {
+    "mainnet_issuer_account": {
+     "state": "VERIFIED",
+     "ledger_index": 106554269,
+     "flags": {
+      "RequireAuth": true,
+      "DefaultRipple": false,
+      "DisallowXRP": false,
+      "GlobalFreeze": false,
+      "NoFreeze": false,
+      "RequireDest": false
+     },
+     "domain": "ondo.finance"
+    },
+    "coverage_attestation_tx": {
+     "hash": "1CA61A8AD75D3FB89186FF1E08025AD9AFA27B5A6D4B9F9A2BB85917BC18C01A",
+     "state": "VERIFIED",
+     "ledger_index": 4764399,
+     "tx_type": "Payment",
+     "attestor": "rpeqYSxvWwVeYx8oCsDM4fSrKsheuie52u",
+     "memo_schema": null,
+     "memo_sha256": "4f49b4b6972d492497332e12efeebc4feca5be1e15987dd3875bb526532c4966",
+     "memo_signer_kid": "cose-interop-1"
+    },
+    "control_facts_attestation_tx": {
+     "hash": "CD26E02B9A79A0A6EA993B41F70FDCEACB336AE0A4227469ED54DC0D202508D6",
+     "state": "VERIFIED",
+     "ledger_index": 4766104,
+     "tx_type": "Payment",
+     "attestor": "rpeqYSxvWwVeYx8oCsDM4fSrKsheuie52u",
+     "memo_schema": "csoai.financial-axis/0.1",
+     "memo_sha256": "d92ecf1059803028f057ed1260ff6d2ddc0edf6e7b91fa39b9490c3a9b34655f",
+     "memo_signer_kid": "cose-interop-1"
+    },
+    "recorded_control_facts": {
+     "status": "MEASURED",
+     "as_of": "2026-08-25",
+     "facts": {
+      "allowlisting_enforced": true,
+      "issuer_can_freeze": true,
+      "identity_domain_declared": true
+     },
+     "raw_flags": {
+      "RequireAuth": true,
+      "DefaultRipple": false,
+      "DisallowXRP": false,
+      "GlobalFreeze": false,
+      "NoFreeze": false,
+      "RequireDest": false
+     },
+     "domain": "ondo.finance"
+    },
+    "control_facts_reproducible_today": true,
+    "control_facts_drift": {}
+   },
+   "audit_state": "VERIFIED",
+   "state": "VERIFIED"
+  },
+  {
+   "chain": "XRPL",
+   "instrument": "Guggenheim Digital Commercial Paper (DCP)",
+   "category": "corporate-paper",
+   "subject_id": null,
+   "artifact": "economy/xrpl-attest/REGISTRY.json",
+   "network": null,
+   "measured": [],
+   "measured_at": null,
+   "state": "NOT-BUILT",
+   "audit_state": "NOT-BUILT",
+   "note": "no public XRPL r-address independently locatable; named in the coverage universe, never attested, never faked"
+  },
+  {
+   "chain": "XRPL",
+   "instrument": "Ripple USD (RLUSD)",
+   "category": "stablecoin",
+   "subject_id": "rMxCKbEDwqr76QuheSUMdEGf4B9xJ8m5De",
+   "artifact": "economy/xrpl-attest/REGISTRY.json + COVERAGE-RUN.json + FINANCIAL-MEASURE-RUN.json",
+   "network": "devnet (attestation carrier) / mainnet (subject + facts)",
+   "measured": [
+    "existence of the mainnet issuer account",
+    "account-root control flags (RequireAuth / NoFreeze / GlobalFreeze / DefaultRipple / DisallowXRP / RequireDest)",
+    "declared identity Domain"
+   ],
+   "not_measured": [
+    "risk verdict on the instrument (UNMEASURED -- requires counsel)",
+    "reserve adequacy, redemption terms, issuer solvency",
+    "anything resembling a credit rating"
+   ],
+   "measured_at": "2026-08-25",
+   "evidence": {
+    "mainnet_issuer_account": {
+     "state": "VERIFIED",
+     "ledger_index": 106554269,
+     "flags": {
+      "RequireAuth": false,
+      "DefaultRipple": true,
+      "DisallowXRP": true,
+      "GlobalFreeze": false,
+      "NoFreeze": false,
+      "RequireDest": true
+     },
+     "domain": "https://ripple.com/"
+    },
+    "coverage_attestation_tx": {
+     "hash": "FEA76FB2B5767500291C96E8D560A777B72B2FD74F91FDAA9C48C135B69F60DA",
+     "state": "VERIFIED",
+     "ledger_index": 4764396,
+     "tx_type": "Payment",
+     "attestor": "rpeqYSxvWwVeYx8oCsDM4fSrKsheuie52u",
+     "memo_schema": null,
+     "memo_sha256": "6870a720430a459c6383536b58114bfe562562ff89eb57b62eae573c8e526558",
+     "memo_signer_kid": "cose-interop-1"
+    },
+    "control_facts_attestation_tx": {
+     "hash": "770A7C8BAB7ED9CC9A18106851DFD14F25267FB65476937BDF8520DF84AEF5C3",
+     "state": "VERIFIED",
+     "ledger_index": 4766101,
+     "tx_type": "Payment",
+     "attestor": "rpeqYSxvWwVeYx8oCsDM4fSrKsheuie52u",
+     "memo_schema": "csoai.financial-axis/0.1",
+     "memo_sha256": "e5e74391ed79b947b8bc9b5762fa1ef4d570ce3f72f869900b41bb6a347a664c",
+     "memo_signer_kid": "cose-interop-1"
+    },
+    "recorded_control_facts": {
+     "status": "MEASURED",
+     "as_of": "2026-08-25",
+     "facts": {
+      "allowlisting_enforced": false,
+      "issuer_can_freeze": true,
+      "identity_domain_declared": true
+     },
+     "raw_flags": {
+      "RequireAuth": false,
+      "DefaultRipple": true,
+      "DisallowXRP": true,
+      "GlobalFreeze": false,
+      "NoFreeze": false,
+      "RequireDest": true
+     },
+     "domain": "https://ripple.com/"
+    },
+    "control_facts_reproducible_today": true,
+    "control_facts_drift": {}
+   },
+   "audit_state": "VERIFIED",
+   "state": "VERIFIED"
+  },
+  {
+   "chain": "XRPL",
+   "instrument": "Archax x abrdn USD Liquidity Fund",
+   "category": "institutional-fund",
+   "subject_id": "rKCu4CucpepQ6N89c8T5GuX2jkxzCST18Q",
+   "artifact": "economy/xrpl-attest/REGISTRY.json + COVERAGE-RUN.json + FINANCIAL-MEASURE-RUN.json",
+   "network": "devnet (attestation carrier) / mainnet (subject + facts)",
+   "measured": [
+    "existence of the mainnet issuer account",
+    "account-root control flags (RequireAuth / NoFreeze / GlobalFreeze / DefaultRipple / DisallowXRP / RequireDest)",
+    "declared identity Domain"
+   ],
+   "not_measured": [
+    "risk verdict on the instrument (UNMEASURED -- requires counsel)",
+    "reserve adequacy, redemption terms, issuer solvency",
+    "anything resembling a credit rating"
+   ],
+   "measured_at": "2026-08-25",
+   "evidence": {
+    "mainnet_issuer_account": {
+     "state": "VERIFIED",
+     "ledger_index": 106554270,
+     "flags": {
+      "RequireAuth": true,
+      "DefaultRipple": true,
+      "DisallowXRP": false,
+      "GlobalFreeze": false,
+      "NoFreeze": false,
+      "RequireDest": false
+     },
+     "domain": "archax.com"
+    },
+    "coverage_attestation_tx": {
+     "hash": "18E36DCE87ADC3BEB218913178BF153C4BF5C97AAF8D43BFEB7E8FC59814C3E7",
+     "state": "VERIFIED",
+     "ledger_index": 4764405,
+     "tx_type": "Payment",
+     "attestor": "rpeqYSxvWwVeYx8oCsDM4fSrKsheuie52u",
+     "memo_schema": null,
+     "memo_sha256": "1291f320c6d12b8086052a47df0925bec23286001eab3e37c9a96c63539ffe2b",
+     "memo_signer_kid": "cose-interop-1"
+    },
+    "control_facts_attestation_tx": {
+     "hash": "F186ADA1F4A430FA1426E0DBEC01D5BB7D867BD32998F5F8A807EB89FC3F68E1",
+     "state": "VERIFIED",
+     "ledger_index": 4766112,
+     "tx_type": "Payment",
+     "attestor": "rpeqYSxvWwVeYx8oCsDM4fSrKsheuie52u",
+     "memo_schema": "csoai.financial-axis/0.1",
+     "memo_sha256": "ad5f08bbe050267f41d79f91cc128cf9529830dd4bd65ff8c78440cbe7343729",
+     "memo_signer_kid": "cose-interop-1"
+    },
+    "recorded_control_facts": {
+     "status": "MEASURED",
+     "as_of": "2026-08-25",
+     "facts": {
+      "allowlisting_enforced": true,
+      "issuer_can_freeze": true,
+      "identity_domain_declared": true
+     },
+     "raw_flags": {
+      "RequireAuth": true,
+      "DefaultRipple": true,
+      "DisallowXRP": false,
+      "GlobalFreeze": false,
+      "NoFreeze": false,
+      "RequireDest": false
+     },
+     "domain": "archax.com"
+    },
+    "control_facts_reproducible_today": true,
+    "control_facts_drift": {}
+   },
+   "audit_state": "VERIFIED",
+   "state": "VERIFIED"
+  },
+  {
+   "chain": "XRPL",
+   "instrument": "OpenEden TBILL (TBL)",
+   "category": "treasury",
+   "subject_id": "rJNE2NNz83GJYtWVLwMvchDWEon3huWnFn",
+   "artifact": "economy/xrpl-attest/REGISTRY.json + COVERAGE-RUN.json + FINANCIAL-MEASURE-RUN.json",
+   "network": "devnet (attestation carrier) / mainnet (subject + facts)",
+   "measured": [
+    "existence of the mainnet issuer account",
+    "account-root control flags (RequireAuth / NoFreeze / GlobalFreeze / DefaultRipple / DisallowXRP / RequireDest)",
+    "declared identity Domain"
+   ],
+   "not_measured": [
+    "risk verdict on the instrument (UNMEASURED -- requires counsel)",
+    "reserve adequacy, redemption terms, issuer solvency",
+    "anything resembling a credit rating"
+   ],
+   "measured_at": "2026-08-25",
+   "evidence": {
+    "mainnet_issuer_account": {
+     "state": "VERIFIED",
+     "ledger_index": 106554271,
+     "flags": {
+      "RequireAuth": true,
+      "DefaultRipple": true,
+      "DisallowXRP": true,
+      "GlobalFreeze": false,
+      "NoFreeze": false,
+      "RequireDest": false
+     },
+     "domain": "openeden.com"
+    },
+    "coverage_attestation_tx": {
+     "hash": "AAA98FFBE5EC0ABB5F7890402B59452692A6447C9D8EA1C55B16A2D2F71DC0C4",
+     "state": "VERIFIED",
+     "ledger_index": 4764402,
+     "tx_type": "Payment",
+     "attestor": "rpeqYSxvWwVeYx8oCsDM4fSrKsheuie52u",
+     "memo_schema": null,
+     "memo_sha256": "30c63e327259756d69b0e619aa268fc280990e4f39def62134bcfa3b01310560",
+     "memo_signer_kid": "cose-interop-1"
+    },
+    "control_facts_attestation_tx": {
+     "hash": "7144FD1F1F227DD76CC48DE91CA4C63AC652E9BAFE9F34F294650138EE34046A",
+     "state": "VERIFIED",
+     "ledger_index": 4766108,
+     "tx_type": "Payment",
+     "attestor": "rpeqYSxvWwVeYx8oCsDM4fSrKsheuie52u",
+     "memo_schema": "csoai.financial-axis/0.1",
+     "memo_sha256": "2bc713fefff6b8345e8e6f8569628b1a260f41a360475061ff5d5c562a3b9c02",
+     "memo_signer_kid": "cose-interop-1"
+    },
+    "recorded_control_facts": {
+     "status": "MEASURED",
+     "as_of": "2026-08-25",
+     "facts": {
+      "allowlisting_enforced": true,
+      "issuer_can_freeze": true,
+      "identity_domain_declared": true
+     },
+     "raw_flags": {
+      "RequireAuth": true,
+      "DefaultRipple": true,
+      "DisallowXRP": true,
+      "GlobalFreeze": false,
+      "NoFreeze": false,
+      "RequireDest": false
+     },
+     "domain": "openeden.com"
+    },
+    "control_facts_reproducible_today": true,
+    "control_facts_drift": {}
+   },
+   "audit_state": "VERIFIED",
+   "state": "VERIFIED"
+  },
+  {
+   "chain": "XRPL",
+   "instrument": "Societe Generale-FORGE EURCV",
+   "category": "stablecoin",
+   "subject_id": null,
+   "artifact": "economy/xrpl-attest/REGISTRY.json",
+   "network": null,
+   "measured": [],
+   "measured_at": null,
+   "state": "NOT-BUILT",
+   "audit_state": "NOT-BUILT",
+   "note": "no public XRPL r-address independently locatable; named in the coverage universe, never attested, never faked"
+  },
+  {
+   "chain": "XRPL",
+   "instrument": "Ctrl Alt / Dubai Land Department real estate",
+   "category": "real-estate",
+   "subject_id": null,
+   "artifact": "economy/xrpl-attest/REGISTRY.json",
+   "network": null,
+   "measured": [],
+   "measured_at": null,
+   "state": "NOT-BUILT",
+   "audit_state": "NOT-BUILT",
+   "note": "no public XRPL r-address independently locatable; named in the coverage universe, never attested, never faked"
+  },
+  {
+   "chain": "XRPL",
+   "instrument": "SBI START tokenized bond",
+   "category": "corporate-bond",
+   "subject_id": null,
+   "artifact": "economy/xrpl-attest/REGISTRY.json",
+   "network": null,
+   "measured": [],
+   "measured_at": null,
+   "state": "NOT-BUILT",
+   "audit_state": "NOT-BUILT",
+   "note": "no public XRPL r-address independently locatable; named in the coverage universe, never attested, never faked"
+  },
+  {
+   "chain": "XRPL",
+   "instrument": "Braza Bank USDB",
+   "category": "stablecoin",
+   "subject_id": "rB3y9EPnq1ZrZP3aXgfyfdXQThzdXMrLMc",
+   "artifact": "economy/xrpl-attest/REGISTRY.json + COVERAGE-RUN.json + FINANCIAL-MEASURE-RUN.json",
+   "network": "devnet (attestation carrier) / mainnet (subject + facts)",
+   "measured": [
+    "existence of the mainnet issuer account",
+    "account-root control flags (RequireAuth / NoFreeze / GlobalFreeze / DefaultRipple / DisallowXRP / RequireDest)",
+    "declared identity Domain"
+   ],
+   "not_measured": [
+    "risk verdict on the instrument (UNMEASURED -- requires counsel)",
+    "reserve adequacy, redemption terms, issuer solvency",
+    "anything resembling a credit rating"
+   ],
+   "measured_at": "2026-08-25",
+   "evidence": {
+    "mainnet_issuer_account": {
+     "state": "VERIFIED",
+     "ledger_index": 106554271,
+     "flags": {
+      "RequireAuth": false,
+      "DefaultRipple": true,
+      "DisallowXRP": false,
+      "GlobalFreeze": false,
+      "NoFreeze": false,
+      "RequireDest": false
+     },
+     "domain": "tokens.brazacripto.com.br"
+    },
+    "coverage_attestation_tx": {
+     "hash": "134368CE42409011F0022369DCFDAE3FDE8317237D7D93FDEC1B6939AFAF3827",
+     "state": "VERIFIED",
+     "ledger_index": 4764408,
+     "tx_type": "Payment",
+     "attestor": "rpeqYSxvWwVeYx8oCsDM4fSrKsheuie52u",
+     "memo_schema": null,
+     "memo_sha256": "7719dc51a94e2a731945a2a848d4de17272ac734c2fc63b83a66263d2bf3e7e2",
+     "memo_signer_kid": "cose-interop-1"
+    },
+    "control_facts_attestation_tx": {
+     "hash": "404DBC2932471EE1076F624642B77278FF8AE767AB8239031B5AB8ED940EC525",
+     "state": "VERIFIED",
+     "ledger_index": 4766115,
+     "tx_type": "Payment",
+     "attestor": "rpeqYSxvWwVeYx8oCsDM4fSrKsheuie52u",
+     "memo_schema": "csoai.financial-axis/0.1",
+     "memo_sha256": "1145e541966480c9705949d37c7ebab46f37715a5ab5b2944fd10139da416c33",
+     "memo_signer_kid": "cose-interop-1"
+    },
+    "recorded_control_facts": {
+     "status": "MEASURED",
+     "as_of": "2026-08-25",
+     "facts": {
+      "allowlisting_enforced": false,
+      "issuer_can_freeze": true,
+      "identity_domain_declared": true
+     },
+     "raw_flags": {
+      "RequireAuth": false,
+      "DefaultRipple": true,
+      "DisallowXRP": false,
+      "GlobalFreeze": false,
+      "NoFreeze": false,
+      "RequireDest": false
+     },
+     "domain": "tokens.brazacripto.com.br"
+    },
+    "control_facts_reproducible_today": true,
+    "control_facts_drift": {}
+   },
+   "audit_state": "VERIFIED",
+   "state": "VERIFIED"
+  },
+  {
+   "chain": "XRPL",
+   "instrument": "Braza Bank BBRL",
+   "category": "stablecoin",
+   "subject_id": "rH5CJsqvNqZGxrMyGaqLEoMWRYcVTAPZMt",
+   "artifact": "economy/xrpl-attest/REGISTRY.json + COVERAGE-RUN.json + FINANCIAL-MEASURE-RUN.json",
+   "network": "devnet (attestation carrier) / mainnet (subject + facts)",
+   "measured": [
+    "existence of the mainnet issuer account",
+    "account-root control flags (RequireAuth / NoFreeze / GlobalFreeze / DefaultRipple / DisallowXRP / RequireDest)",
+    "declared identity Domain"
+   ],
+   "not_measured": [
+    "risk verdict on the instrument (UNMEASURED -- requires counsel)",
+    "reserve adequacy, redemption terms, issuer solvency",
+    "anything resembling a credit rating"
+   ],
+   "measured_at": "2026-08-25",
+   "evidence": {
+    "mainnet_issuer_account": {
+     "state": "VERIFIED",
+     "ledger_index": 106554272,
+     "flags": {
+      "RequireAuth": false,
+      "DefaultRipple": true,
+      "DisallowXRP": false,
+      "GlobalFreeze": false,
+      "NoFreeze": false,
+      "RequireDest": false
+     },
+     "domain": "tokens.brazacripto.com.br"
+    },
+    "coverage_attestation_tx": {
+     "hash": "FD4BDF36DB9AFE72373FB91854248A87745FC39A8B5D96AA603DC6935524B9E6",
+     "state": "VERIFIED",
+     "ledger_index": 4764410,
+     "tx_type": "Payment",
+     "attestor": "rpeqYSxvWwVeYx8oCsDM4fSrKsheuie52u",
+     "memo_schema": null,
+     "memo_sha256": "72fa2d662c7b794c037a407069b864ca8ada56972651d62ced6e43aebdbe7815",
+     "memo_signer_kid": "cose-interop-1"
+    },
+    "control_facts_attestation_tx": {
+     "hash": "D0B72B736CA252DF15C6BDB759107FC5A9CD40DB8D5D0D0AD4AA358A382C69C7",
+     "state": "VERIFIED",
+     "ledger_index": 4766118,
+     "tx_type": "Payment",
+     "attestor": "rpeqYSxvWwVeYx8oCsDM4fSrKsheuie52u",
+     "memo_schema": "csoai.financial-axis/0.1",
+     "memo_sha256": "4d2357471282dade55bb7549bbeb58fb3064f8a9a1f563e194216e7ba67ad49c",
+     "memo_signer_kid": "cose-interop-1"
+    },
+    "recorded_control_facts": {
+     "status": "MEASURED",
+     "as_of": "2026-08-25",
+     "facts": {
+      "allowlisting_enforced": false,
+      "issuer_can_freeze": true,
+      "identity_domain_declared": true
+     },
+     "raw_flags": {
+      "RequireAuth": false,
+      "DefaultRipple": true,
+      "DisallowXRP": false,
+      "GlobalFreeze": false,
+      "NoFreeze": false,
+      "RequireDest": false
+     },
+     "domain": "tokens.brazacripto.com.br"
+    },
+    "control_facts_reproducible_today": true,
+    "control_facts_drift": {}
+   },
+   "audit_state": "VERIFIED",
+   "state": "VERIFIED"
+  },
+  {
+   "chain": "XRPL",
+   "instrument": "Justoken JMWH (energy)",
+   "category": "commodity",
+   "subject_id": null,
+   "artifact": "economy/xrpl-attest/REGISTRY.json",
+   "network": null,
+   "measured": [],
+   "measured_at": null,
+   "state": "NOT-BUILT",
+   "audit_state": "NOT-BUILT",
+   "note": "no public XRPL r-address independently locatable; named in the coverage universe, never attested, never faked"
+  },
+  {
+   "chain": "XRPL",
+   "instrument": "Ctrl Alt / Billiton diamonds",
+   "category": "commodity",
+   "subject_id": null,
+   "artifact": "economy/xrpl-attest/REGISTRY.json",
+   "network": null,
+   "measured": [],
+   "measured_at": null,
+   "state": "NOT-BUILT",
+   "audit_state": "NOT-BUILT",
+   "note": "no public XRPL r-address independently locatable; named in the coverage universe, never attested, never faked"
+  },
+  {
+   "chain": "XRPL",
+   "instrument": "GateHub XAU (gold)",
+   "category": "commodity",
+   "subject_id": null,
+   "artifact": "economy/xrpl-attest/REGISTRY.json",
+   "network": null,
+   "measured": [],
+   "measured_at": null,
+   "state": "NOT-BUILT",
+   "audit_state": "NOT-BUILT",
+   "note": "no public XRPL r-address independently locatable; named in the coverage universe, never attested, never faked"
+  },
+  {
+   "chain": "XRPL",
+   "instrument": "Schuman Financial EURoP",
+   "category": "stablecoin",
+   "subject_id": null,
+   "artifact": "economy/xrpl-attest/REGISTRY.json",
+   "network": null,
+   "measured": [],
+   "measured_at": null,
+   "state": "NOT-BUILT",
+   "audit_state": "NOT-BUILT",
+   "note": "no public XRPL r-address independently locatable; named in the coverage universe, never attested, never faked"
+  },
+  {
+   "chain": "XRPL",
+   "instrument": "Kyobo Life tokenized govt-bond pilot",
+   "category": "government-bond",
+   "subject_id": null,
+   "artifact": "economy/xrpl-attest/REGISTRY.json",
+   "network": null,
+   "measured": [],
+   "measured_at": null,
+   "state": "NOT-BUILT",
+   "audit_state": "NOT-BUILT",
+   "note": "no public XRPL r-address independently locatable; named in the coverage universe, never attested, never faked"
+  },
+  {
+   "chain": "XRPL",
+   "network": "devnet",
+   "instrument": "permissionless-attach capability PoC (synthetic subject)",
+   "category": "capability-proof",
+   "subject_id": "rBkftm76iPPjT3zBnfS7yLiMzK4tBZkgCs",
+   "measured": [
+    "that a signed GSPC card digest can be attached to a ledger transaction toward an account we do not control, and to an XLS-70 CredentialCreate naming it, without its cooperation"
+   ],
+   "not_measured": [
+    "anything about a real instrument -- the subject is synthetic"
+   ],
+   "measured_at": "2026-08-25",
+   "artifact": "economy/xrpl-attest/RUN-RECORD.json (verifier: verify.py)",
+   "evidence": {
+    "memo_attach_tx": {
+     "hash": "BC767FEF6497832908B2D208101E361C58A6C0B617C5D94419F9274826A77464",
+     "state": "VERIFIED",
+     "ledger_index": 4763652,
+     "tx_type": "Payment",
+     "attestor": "rpeqYSxvWwVeYx8oCsDM4fSrKsheuie52u",
+     "memo_schema": "csoai.xrpl-attest/0.1",
+     "memo_sha256": "35047fbf6d0316ff917186650def7b1ab3fb11c8b2e089e8b2b1bf3d75e1c301",
+     "memo_signer_kid": "cose-interop-1"
+    },
+    "credential_attach_tx": {
+     "hash": "958BA25801A068AEA1507FC1649A862C33D59A1D715924794D98D2C66254DC4B",
+     "state": "VERIFIED",
+     "ledger_index": 4763655,
+     "tx_type": "CredentialCreate",
+     "attestor": "rpeqYSxvWwVeYx8oCsDM4fSrKsheuie52u"
+    }
+   },
+   "audit_state": "VERIFIED",
+   "state": "VERIFIED"
+  },
+  {
+   "chain": "EVM / EAS",
+   "network": "mainnet + testnet (probed: ethereum-mainnet, sepolia, base-mainnet)",
+   "instrument": "EAS schema registration for the CSOAI coverage claim",
+   "category": "registry",
+   "subject_id": "string asset,bytes32 verdictSha256,uint8 statusCode,string statusText,string reportUri",
+   "measured": [
+    "whether the schema is registered in the EAS SchemaRegistry, under the UID the estate's own script uses AND under both correctly-derived EAS UIDs"
+   ],
+   "not_measured": [],
+   "measured_at": "2026-08-26",
+   "artifact": "economy/xrpl-attest/eas/attest_offchain.cjs (no registration code exists)",
+   "evidence": {
+    "schema_uids_probed": {
+     "naive_ethers_id_used_by_attest_offchain": "0x3ec1316fcc48431492af9b650756557ee5f220242807c071367a70e96bfb9634",
+     "eas_derived_resolver_zero_revocable": "0x82bff6697957b448b9675de4052d5ef20d5d0f7943948d430d00c822cde2120d",
+     "eas_derived_resolver_zero_irrevocable": "0x5c36d069e00e7ff334fbc05c40b7798be04df14a94bfe200dfb30b0c367cbfd3"
+    },
+    "chains": [
+     {
+      "chain": "ethereum-mainnet",
+      "network": "mainnet",
+      "block": 25838929,
+      "eas_schema_registered": {
+       "naive_ethers_id_used_by_attest_offchain": "NOT REGISTERED",
+       "eas_derived_resolver_zero_revocable": "NOT REGISTERED",
+       "eas_derived_resolver_zero_irrevocable": "NOT REGISTERED"
+      },
+      "recorded_uids_on_chain": {
+       "0xcf86775d67ef01d70f5413cfb455e08fa743885a31921fd30cf8eae5daadcd04": "NOT ON CHAIN",
+       "0xb09437abb7b545e1e7215023c84a32375e8f1d9a2c43130f118fe73870e137a6": "NOT ON CHAIN",
+       "0xa39a6ebdb94a2a73f3dd5912284f83229f486669d77e84b6adf7b0318e4a9bfa": "NOT ON CHAIN"
+      },
+      "recorded_attester": {
+       "address": "0xbFB474541fDC3653f18576D9e3974CABC7C8a5Bc",
+       "tx_count": 0,
+       "balance_wei": 0
+      },
+      "target_contracts": {
+       "BlackRock BUIDL": {
+        "address": "0x7712c34205737192402172409a8f7ccef8aa2aec",
+        "has_code": true,
+        "code_bytes": 703
+       },
+       "Franklin Templeton BENJI": {
+        "address": "0x3DDc84940Ab509C11B20B76B466933f40b750dc9",
+        "has_code": true,
+        "code_bytes": 708
+       },
+       "Apollo ACRED": {
+        "address": "0x17418038ecF73BA4026c4f428547BF099706F27B",
+        "has_code": true,
+        "code_bytes": 170
+       }
+      },
+      "reachable": true
+     },
+     {
+      "chain": "sepolia",
+      "network": "testnet",
+      "block": 11570439,
+      "eas_schema_registered": {
+       "naive_ethers_id_used_by_attest_offchain": "NOT REGISTERED",
+       "eas_derived_resolver_zero_revocable": "NOT REGISTERED",
+       "eas_derived_resolver_zero_irrevocable": "NOT REGISTERED"
+      },
+      "recorded_uids_on_chain": {
+       "0xcf86775d67ef01d70f5413cfb455e08fa743885a31921fd30cf8eae5daadcd04": "NOT ON CHAIN",
+       "0xb09437abb7b545e1e7215023c84a32375e8f1d9a2c43130f118fe73870e137a6": "NOT ON CHAIN",
+       "0xa39a6ebdb94a2a73f3dd5912284f83229f486669d77e84b6adf7b0318e4a9bfa": "NOT ON CHAIN"
+      },
+      "recorded_attester": {
+       "address": "0xbFB474541fDC3653f18576D9e3974CABC7C8a5Bc",
+       "tx_count": 0,
+       "balance_wei": 0
+      },
+      "target_contracts": {
+       "BlackRock BUIDL": {
+        "address": "0x7712c34205737192402172409a8f7ccef8aa2aec",
+        "has_code": false,
+        "code_bytes": 0
+       },
+       "Franklin Templeton BENJI": {
+        "address": "0x3DDc84940Ab509C11B20B76B466933f40b750dc9",
+        "has_code": false,
+        "code_bytes": 0
+       },
+       "Apollo ACRED": {
+        "address": "0x17418038ecF73BA4026c4f428547BF099706F27B",
+        "has_code": false,
+        "code_bytes": 0
+       }
+      },
+      "reachable": true
+     },
+     {
+      "chain": "base-mainnet",
+      "network": "mainnet",
+      "block": 50476231,
+      "eas_schema_registered": {
+       "naive_ethers_id_used_by_attest_offchain": "NOT REGISTERED",
+       "eas_derived_resolver_zero_revocable": "NOT REGISTERED",
+       "eas_derived_resolver_zero_irrevocable": "NOT REGISTERED"
+      },
+      "recorded_uids_on_chain": {
+       "0xcf86775d67ef01d70f5413cfb455e08fa743885a31921fd30cf8eae5daadcd04": "NOT ON CHAIN",
+       "0xb09437abb7b545e1e7215023c84a32375e8f1d9a2c43130f118fe73870e137a6": "NOT ON CHAIN",
+       "0xa39a6ebdb94a2a73f3dd5912284f83229f486669d77e84b6adf7b0318e4a9bfa": "NOT ON CHAIN"
+      },
+      "recorded_attester": {
+       "address": "0xbFB474541fDC3653f18576D9e3974CABC7C8a5Bc",
+       "tx_count": 0,
+       "balance_wei": 0
+      },
+      "target_contracts": {
+       "BlackRock BUIDL": {
+        "address": "0x7712c34205737192402172409a8f7ccef8aa2aec",
+        "has_code": false,
+        "code_bytes": 0
+       },
+       "Franklin Templeton BENJI": {
+        "address": "0x3DDc84940Ab509C11B20B76B466933f40b750dc9",
+        "has_code": false,
+        "code_bytes": 0
+       },
+       "Apollo ACRED": {
+        "address": "0x17418038ecF73BA4026c4f428547BF099706F27B",
+        "has_code": false,
+        "code_bytes": 0
+       }
+      },
+      "reachable": true
+     }
+    ]
+   },
+   "audit_state": "VERIFIED",
+   "state": "NOT-BUILT",
+   "note": "No EAS schema is registered on any probed chain. Registering one is an on-chain write and is OWNER-GATED; nothing here does it."
+  },
+  {
+   "chain": "EVM / EAS",
+   "network": "off-chain (no chain write)",
+   "instrument": "off-chain EIP-712 coverage attestations (BUIDL, BENJI, ACRED)",
+   "category": "attestation",
+   "subject_id": "BlackRock BUIDL=0x7712c34205737192402172409a8f7ccef8aa2aec, Franklin Templeton BENJI=0x3DDc84940Ab509C11B20B76B466933f40b750dc9, Apollo ACRED=0x17418038ecF73BA4026c4f428547BF099706F27B",
+   "measured": [
+    "that the three named RWA contracts exist as deployed code on Ethereum mainnet (eth_getCode)"
+   ],
+   "not_measured": [
+    "everything about the instruments themselves -- status is UNMEASURED by construction"
+   ],
+   "measured_at": "2026-08-25",
+   "artifact": "economy/xrpl-attest/eas/EAS-OFFCHAIN-RUN.json",
+   "evidence": {
+    "recorded_uids_on_chain": {
+     "ethereum-mainnet": {
+      "0xcf86775d67ef01d70f5413cfb455e08fa743885a31921fd30cf8eae5daadcd04": "NOT ON CHAIN",
+      "0xb09437abb7b545e1e7215023c84a32375e8f1d9a2c43130f118fe73870e137a6": "NOT ON CHAIN",
+      "0xa39a6ebdb94a2a73f3dd5912284f83229f486669d77e84b6adf7b0318e4a9bfa": "NOT ON CHAIN"
+     },
+     "sepolia": {
+      "0xcf86775d67ef01d70f5413cfb455e08fa743885a31921fd30cf8eae5daadcd04": "NOT ON CHAIN",
+      "0xb09437abb7b545e1e7215023c84a32375e8f1d9a2c43130f118fe73870e137a6": "NOT ON CHAIN",
+      "0xa39a6ebdb94a2a73f3dd5912284f83229f486669d77e84b6adf7b0318e4a9bfa": "NOT ON CHAIN"
+     },
+     "base-mainnet": {
+      "0xcf86775d67ef01d70f5413cfb455e08fa743885a31921fd30cf8eae5daadcd04": "NOT ON CHAIN",
+      "0xb09437abb7b545e1e7215023c84a32375e8f1d9a2c43130f118fe73870e137a6": "NOT ON CHAIN",
+      "0xa39a6ebdb94a2a73f3dd5912284f83229f486669d77e84b6adf7b0318e4a9bfa": "NOT ON CHAIN"
+     }
+    },
+    "recorded_attester_unused_everywhere": true,
+    "target_contract_code": {
+     "ethereum-mainnet": {
+      "BlackRock BUIDL": {
+       "address": "0x7712c34205737192402172409a8f7ccef8aa2aec",
+       "has_code": true,
+       "code_bytes": 703
+      },
+      "Franklin Templeton BENJI": {
+       "address": "0x3DDc84940Ab509C11B20B76B466933f40b750dc9",
+       "has_code": true,
+       "code_bytes": 708
+      },
+      "Apollo ACRED": {
+       "address": "0x17418038ecF73BA4026c4f428547BF099706F27B",
+       "has_code": true,
+       "code_bytes": 170
+      }
+     },
+     "sepolia": {
+      "BlackRock BUIDL": {
+       "address": "0x7712c34205737192402172409a8f7ccef8aa2aec",
+       "has_code": false,
+       "code_bytes": 0
+      },
+      "Franklin Templeton BENJI": {
+       "address": "0x3DDc84940Ab509C11B20B76B466933f40b750dc9",
+       "has_code": false,
+       "code_bytes": 0
+      },
+      "Apollo ACRED": {
+       "address": "0x17418038ecF73BA4026c4f428547BF099706F27B",
+       "has_code": false,
+       "code_bytes": 0
+      }
+     },
+     "base-mainnet": {
+      "BlackRock BUIDL": {
+       "address": "0x7712c34205737192402172409a8f7ccef8aa2aec",
+       "has_code": false,
+       "code_bytes": 0
+      },
+      "Franklin Templeton BENJI": {
+       "address": "0x3DDc84940Ab509C11B20B76B466933f40b750dc9",
+       "has_code": false,
+       "code_bytes": 0
+      },
+      "Apollo ACRED": {
+       "address": "0x17418038ecF73BA4026c4f428547BF099706F27B",
+       "has_code": false,
+       "code_bytes": 0
+      }
+     }
+    },
+    "reproducible": false,
+    "reproducibility_defect": "attest_offchain.cjs calls ethers.Wallet.createRandom() at module scope, so every run signs under a NEW throwaway key and emits NEW uids. Re-run 2026-08-26 produced uids 0x2b10dfba\u2026, 0xb5c0b8e6\u2026, 0xacdc266a\u2026 -- none matching the stored artifact. The file's own comment claiming the signer is 'derived deterministically so the run is reproducible' is false.",
+    "verifiability_defect": "EAS-OFFCHAIN-RUN.json stores only {uid, attester, signature_valid: true}. It stores no signature, no signed message and no domain separator, and the signing key was never persisted. No stranger can verify these attestations, and neither can we."
+   },
+   "audit_state": "UNRESOLVABLE",
+   "state": "NOT-BUILT",
+   "note": "Counted as NOT-BUILT, not UNTESTED: the artifact is not a weak proof, it is not a proof at all. The only VERIFIED fact in it is that the three recipient contracts are real deployed code."
+  },
+  {
+   "chain": "EVM / EAS",
+   "network": "n/a",
+   "instrument": "estate code that talks to EAS",
+   "category": "capability",
+   "subject_id": "gspc_measurement.anchor backend 'eas'",
+   "measured": [
+    "presence of any code path in the estate that reads from or writes to EAS"
+   ],
+   "not_measured": [],
+   "measured_at": "2026-08-26",
+   "artifact": "gspc-os packages/gspc-measurement/gspc_measurement/anchor.py",
+   "evidence": {
+    "anchor_backends": {
+     "dryrun": "implemented",
+     "xrpl": "NOT-BUILT",
+     "eas": "NOT-BUILT"
+    },
+    "bridge_py": "ERC-3643 / ONCHAINID claim mapper exists and refuses to mint or transfer -- but register_claim is likewise not-built, so it never reaches a chain",
+    "network_calls_found": 0
+   },
+   "audit_state": "VERIFIED",
+   "state": "NOT-BUILT"
+  }
+ ]
+}
