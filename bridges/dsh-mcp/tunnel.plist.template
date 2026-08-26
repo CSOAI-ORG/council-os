@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!--
+  SSH tunnel: local __LOCAL_PORT__ -> pod's 127.0.0.1:__REMOTE_PORT__.
+  Matches the existing com.meok.dsh-tunnel-* jobs. Fill in:
+    __NAME__         short pod name (e.g. gpu-pod-a)
+    __LOCAL_PORT__   local port (3081/3082/3083 are in use; pick a free one)
+    __REMOTE_PORT__  pod-side DSH port (3080 per pod-setup.sh)
+    __SSH_PORT__     pod SSH port from `runpodctl get pod` / RunPod API
+    __SSH_HOST__     e.g. root@1.2.3.4
+  Install: cp to ~/Library/LaunchAgents/com.meok.dsh-tunnel-__NAME__.plist
+           launchctl load ~/Library/LaunchAgents/com.meok.dsh-tunnel-__NAME__.plist
+           launchctl start com.meok.dsh-tunnel-__NAME__
+  NOTE: pod SSH endpoints move when pods restart — re-check via the RunPod API
+  before assuming a dead tunnel means a dead pod.
+-->
+<plist version="1.0">
+<dict>
+	<key>KeepAlive</key>
+	<false/>
+	<key>Label</key>
+	<string>com.meok.dsh-tunnel-__NAME__</string>
+	<key>ProgramArguments</key>
+	<array>
+		<string>/usr/bin/ssh</string>
+		<string>-N</string>
+		<string>-L</string>
+		<string>__LOCAL_PORT__:127.0.0.1:__REMOTE_PORT__</string>
+		<string>-o</string>
+		<string>ServerAliveInterval=30</string>
+		<string>-o</string>
+		<string>ServerAliveCountMax=3</string>
+		<string>-o</string>
+		<string>ExitOnForwardFailure=yes</string>
+		<string>-o</string>
+		<string>StrictHostKeyChecking=no</string>
+		<string>-p</string>
+		<string>__SSH_PORT__</string>
+		<string>__SSH_HOST__</string>
+	</array>
+	<key>RunAtLoad</key>
+	<false/>
+	<key>StandardErrorPath</key>
+	<string>/tmp/dsh-tunnel-__NAME__.err</string>
+	<key>StandardOutPath</key>
+	<string>/tmp/dsh-tunnel-__NAME__.log</string>
+</dict>
+</plist>
