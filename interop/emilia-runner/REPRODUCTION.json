@@ -1,0 +1,26 @@
+{
+  "schema": "csoai.instrument-body/0.1",
+  "preimage_rule": "rfc8785",
+  "label": "reproduction",
+  "not_production_measurement": true,
+  "not_a_gspc_cell": true,
+  "card_id": null,
+  "attachments": [
+    {
+      "type": "emilia-cose",
+      "preimage_rule": "ep-scitt-statement-identity-v0.1",
+      "status": "VALID",
+      "note": "identity fixture only; EP authorization UNCHECKABLE",
+      "git_sha": "e507acdf8efbe8951cb4294801d4c440f0b86a5a",
+      "digest": "889e410cceec75f4c0955ca9a373d4a8375c00300cbe4d2be375a559958de697",
+      "statement_entry_digest_a": "sha256:ba36963493c183eea6c8f71e492121d49d14c1f0338574a6171b1312c763b4e1",
+      "statement_entry_digest_b": "sha256:be2becd5536416c02adec625fff8aca3b75beb691543d458935bfce7ea857ef0",
+      "signing_input_digest": "sha256:c4b229193fd4f871f431daf6f6bc7c5cab5f13896c42b7fc3a7397a3ff67dd86",
+      "classification": "same_signing_input_different_envelope",
+      "hostile": ["payload substitution → different_signing_input", "protected-header substitution → different_signing_input"],
+      "environment": "macOS 26.5.1 arm64, Python 3.14.6, cbor2+cryptography, verifier commit in this folder",
+      "own_verifier": true,
+      "bundled_runner": false
+    }
+  ]
+}

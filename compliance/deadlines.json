@@ -4,6 +4,27 @@
   "owner": "CSOAI Ltd (UK #16939677)",
   "obligations": [
     {
+      "id": "eu-ai-act-art50-transparency",
+      "name": "EU AI Act — Article 50 transparency (interaction, deepfakes, public-interest text)",
+      "date": "2026-08-02",
+      "regulation": "Regulation (EU) 2024/1689 Art. 50(1)(3)(4); Art. 113; not postponed by 2026/1744",
+      "obligation": "Transparency duties for certain AI systems. Measurement body cites this date. We do not certify Art 50 compliance.",
+      "our_action": "Cite 2 August 2026 everywhere. Kill 2 November 2026 copies. C2PA pin for media; AI Provenance Protocol pin for text.",
+      "status": "monitoring",
+      "doc": "ART50-DATE.md",
+      "eli": "http://data.europa.eu/eli/reg/2024/1689/2026-07-27"
+    },
+    {
+      "id": "eu-ai-act-art50-2-legacy-marking",
+      "name": "EU AI Act — Article 50(2) marking for generative systems already on market before 2 Aug 2026",
+      "date": "2026-12-02",
+      "regulation": "Regulation (EU) 2024/1689 Art. 50(2), Art. 111 as amended by 2026/1744",
+      "obligation": "Machine-readable marking / detection for pre-existing generative systems. New systems from 2 Aug 2026 have no grace period.",
+      "our_action": "Do not collapse this into 2 November 2026. Two dates, one source file.",
+      "status": "monitoring",
+      "doc": "ART50-DATE.md"
+    },
+    {
       "id": "eu-ai-act-gpai-enforcement",
       "name": "EU AI Act — GPAI enforcement powers live",
       "date": "2026-08-02",

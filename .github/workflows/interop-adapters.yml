@@ -1,0 +1,22 @@
+name: interop-adapters
+on:
+  push:
+    paths: ["interop/**"]
+  pull_request:
+    paths: ["interop/**"]
+jobs:
+  three-state:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: body + dispatch (offline)
+        working-directory: interop/body
+        run: python -m unittest test_body.py test_three_state.py -v
+      - name: emilia independent (offline)
+        working-directory: interop/emilia-runner
+        run: |
+          pip install -r requirements.txt
+          python -m unittest test_offline.py -v
