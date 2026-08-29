@@ -1,0 +1,7 @@
+Apache License
+Version 2.0, January 2004
+http://www.apache.org/licenses/
+
+This independent runner contains no Emilia Gate source and no GSPC
+private keys. The vectors file is consumed under Apache-2.0 from
+emiliaprotocol/emilia-protocol at the pinned commit.

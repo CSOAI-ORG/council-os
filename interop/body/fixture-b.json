@@ -1,0 +1,14 @@
+{
+  "schema": "csoai.instrument-body/0.1",
+  "preimage_rule": "rfc8785",
+  "card_id": "82994353b8f94337746ddf73700b0edc425d695d43910dbfeb53d118d5a09a1c",
+  "attachments": [
+    {
+      "kind": "ots",
+      "preimage_rule": "ots-v1",
+      "verdict": "PENDING",
+      "ref": "ots-stamper/out/fac1c4868ce400c0.receipt.json"
+    }
+  ],
+  "body_id": "697c2d83d4eb822793acad52432327a411c49453638d363000e9b60e89dc8b18"
+}

@@ -1,0 +1,14 @@
+{
+  "schema": "csoai.instrument-body/0.1",
+  "preimage_rule": "rfc8785",
+  "card_id": "82994353b8f94337746ddf73700b0edc425d695d43910dbfeb53d118d5a09a1c",
+  "attachments": [
+    {
+      "kind": "emilia",
+      "preimage_rule": "ep-scitt-statement-identity-v0.1",
+      "verdict": "UNCHECKABLE",
+      "ref": "EP authorization not in vectors.reference.json; identity fixture independent VALID-for-identity only"
+    }
+  ],
+  "body_id": "0207f03da54c6e97d4f86e5c43dc20e40f1d1b46a7abec3975f0668b7d101748"
+}

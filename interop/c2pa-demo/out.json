@@ -1,0 +1,31 @@
+{
+  "verify_cai_fixture": {
+    "verdict": "INVALID",
+    "validation_state": "Valid",
+    "validation_codes": [
+      "signingCredential.untrusted"
+    ],
+    "active_manifest": "contentauth:urn:uuid:c85a2b90-f1a0-4aa4-b17f-f938b475804e",
+    "manifest_digest": "5a2bb57e5ab651063635df30b9f206f8b5fae5f08ed53d5e62f5ffbe0fbb521c",
+    "pin": "c2pa-python==0.37.8",
+    "hmac": false
+  },
+  "sign_then_verify": {
+    "verdict": "INVALID",
+    "validation_state": "Invalid",
+    "validation_codes": [
+      "signingCredential.untrusted",
+      "assertion.action.malformed"
+    ],
+    "active_manifest": "urn:c2pa:dc6e5b66-d4ce-402b-8bd6-c2472fb21ce4",
+    "manifest_digest": "46052263694a9848c0721f69b6b5a44c90369c5e6404f8925494f29ce80658f1",
+    "pin": "c2pa-python==0.37.8",
+    "hmac": false,
+    "signed": true,
+    "bytes": 42919
+  },
+  "kind": "c2pa-manifest",
+  "preimage_rule": "c2pa-cai",
+  "not_a_gspc_cell": true,
+  "art50": "Code of Practice example, not a mandate"
+}

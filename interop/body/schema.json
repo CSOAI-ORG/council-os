@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "csoai.instrument-body/0.1",
+  "title": "Council instrument body v0",
+  "description": "Card stays card-v1. Attachments dispatch by kind. Do not render as glass card.",
+  "type": "object",
+  "required": ["schema", "preimage_rule", "card_id", "attachments"],
+  "additionalProperties": false,
+  "properties": {
+    "schema": { "const": "csoai.instrument-body/0.1" },
+    "preimage_rule": { "const": "rfc8785" },
+    "card_id": { "type": "string", "minLength": 64, "maxLength": 64 },
+    "attachments": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["kind", "preimage_rule", "verdict"],
+        "properties": {
+          "kind": { "type": "string" },
+          "preimage_rule": { "type": "string" },
+          "verdict": { "enum": ["VALID", "INVALID", "UNCHECKABLE", "PENDING", "REPRODUCTION"] },
+          "ref": { "type": "string" }
+        }
+      }
+    },
+    "body_id": { "type": "string" }
+  }
+}
