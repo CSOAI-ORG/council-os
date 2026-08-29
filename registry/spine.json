@@ -14,10 +14,11 @@
  "rule": "JL.5 by construction: only ops/live_status_check.py may write LIVE. Hand-edited LIVE is invalid.",
  "public_framing": {
   "counts": {
-   "measured": 13,
-   "total": 14
+   "measured": 15,
+   "total": 22,
+   "empty": 7
   },
-  "note": "public grammar 13-of-14 until jail separation test (owner ruling); internal canon 22 axes"
+  "note": "Living grammar from GET https://councilof.ai/api/gspc (totals.public_count). 13-of-14 / fourteen-axis public grammar is superseded. Empty cells stay empty. Jail on the live board is TIE (not UNTESTED). Organ LIVE flags are still only written by ops/live_status_check.py."
  },
  "axes": [
   {
@@ -801,7 +802,7 @@
     "open-banking",
     "ratings-distribution"
    ],
-   "status": "LANE-REAL max; no financial axis has a public signed board \u2014 never claim LIVE here until one does"
+   "status": "LANE-REAL max; no financial axis has a public signed board — never claim LIVE here until one does"
   },
   "economy": {
    "packages": [
