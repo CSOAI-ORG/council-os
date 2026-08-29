@@ -744,11 +744,12 @@
      "what": "signed public board entry",
      "surface": "https://councilof.ai/api/gspc",
      "status": "LIVE",
-     "separation": "UNTESTED",
+     "separation": "TIE",
      "evidence": {
-      "checked": "2026-08-25",
+      "checked": "2026-08-29",
       "board_http": 200,
-      "axis_on_board": true
+      "axis_on_board": true,
+      "live_api": "GET https://councilof.ai/api/gspc axis=jail n=71 MEASURED TIE"
      }
     },
     "public_face": {
