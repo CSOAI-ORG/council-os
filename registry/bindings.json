@@ -9,6 +9,14 @@
   "canonical_c2pa": "contentauth/c2pa-python",
   "emilia_commit": "e507acdf8efbe8951cb4294801d4c440f0b86a5a",
   "updated": "2026-08-29",
+  "distribution": {
+    "npm": "csoai-gspc-mcp",
+    "mcp_registry": "io.github.CSOAI-ORG/gspc",
+    "http": "https://councilof.ai/mcp",
+    "canonical_c2pa_mcp": "CSOAI-ORG/c2pa-watermark-mcp",
+    "canonical_c2pa_lib": "c2pa-python",
+    "text_art50": "AI-Provenance-Protocol/ai-provenance-protocol"
+  },
   "rows": [
     {
       "name": "c2pa",
