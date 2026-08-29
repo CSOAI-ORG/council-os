@@ -825,6 +825,7 @@
    }
   }
  },
- "binding_principle": "BIND, don't migrate: each package is a pointer + contract + checker over the existing repo/surface. Code moves only when a checker proves the move preserved behaviour.",
+ "bindings_file": "registry/bindings.json",
+ "binding_principle": "BIND, don't migrate: each package is a pointer + contract + checker over the existing repo/surface. Code moves only when a checker proves the move preserved behaviour. Pins live in registry/bindings.json. Do not vendor upstream trees.",
  "last_check": "2026-08-25"
 }
