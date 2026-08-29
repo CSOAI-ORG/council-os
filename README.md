@@ -5,7 +5,9 @@ with statuses that **cannot overclaim by construction**.
 
 Council of AI is an independent AI measurement body (CSOAI Ltd, UK #16939677).
 We measure AI systems against the rules that govern them, sign the result
-(Ed25519 over RFC 8785 canonical JSON), and publish what we cannot yet measure.
+(Ed25519 over CPython `json.dumps` of `body` — `ensure_ascii=True`, integral
+float `0.0`; this is **not** RFC 8785 / JCS — JCS is for new catalog rows only),
+and publish what we cannot yet measure.
 Not a certifier. Scores are never sold. Regulators free forever.
 
 ## The five organs of an axis

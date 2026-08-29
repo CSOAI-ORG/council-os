@@ -20,7 +20,8 @@ Council OS signs **opinions / measurements ABOUT assets and AI systems**. It is 
   is created, offered, or referenced as investable by this engine.
 
 We measure AI systems against the rules that govern them, sign the result
-(Ed25519 over RFC 8785 canonical JSON), and publish what we cannot yet measure.
+(Ed25519 over CPython json.dumps of body — not RFC 8785; JCS is catalog-only),
+and publish what we cannot yet measure.
 **Not a certifier. Scores are never sold. Regulators free forever.**
 
 ## Why the posture matters for U.S. securities framing

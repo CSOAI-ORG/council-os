@@ -776,7 +776,20 @@
     "corrections-ledger",
     "transparency-log"
    ],
-   "bind": "existing artifacts: councilof-ai@conformance-runs/docs/interop (Merkle log, key-lifecycle, COSE_Sign1) + docs/card-conformance corpus v1.0.0"
+   "bind": "existing artifacts: councilof-ai@conformance-runs/docs/interop (Merkle log, key-lifecycle, COSE_Sign1) + docs/card-conformance corpus v1.0.0",
+   "scitt": {
+    "package": "pyscitt",
+    "pointer": "https://github.com/microsoft/scitt-ccf-ledger",
+    "status": "UNCHECKABLE",
+    "note": "client pin only. no Transparency Service. not our log."
+   },
+   "ots-anchor": {
+    "package": "opentimestamps-client==0.7.2",
+    "path": "TUI 1 ots-stamper/out/fac1c4868ce400c0.receipt.json",
+    "content_id": "fac1c4868ce400c0ef84afba5ed983c89e38f244c7ee416d72ed19912684383a",
+    "state": "PENDING",
+    "bitcoin_attested": false
+   }
   },
   "connect": {
    "packages": [
