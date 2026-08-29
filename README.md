@@ -8,6 +8,15 @@ We measure AI systems against the rules that govern them, sign the result
 (Ed25519 over RFC 8785 canonical JSON), and publish what we cannot yet measure.
 Not a certifier. Scores are never sold. Regulators free forever.
 
+## Public board (living)
+
+**22 axis · 15 measured · 7 empty.** Grammar from `GET https://councilof.ai/api/gspc`
+(`totals.public_count`). Empty cells stay empty. A reproduction card is not a
+live CSOAI card.
+
+The old public grammar was fourteen GSPC axes (13-of-14 until jail). That
+sentence is superseded. The living API wins.
+
 ## The five organs of an axis
 
 Every measurement axis is a vertical with the same anatomy:
@@ -20,7 +29,7 @@ Every measurement axis is a vertical with the same anatomy:
 
 ## The machine truth: `registry/spine.json`
 
-Fourteen GSPC axes, each with the five organs and a status from the grammar
+Each axis has the five organs and a status from the grammar
 `LIVE · LANE-REAL · LANE-REPORTED · THEORY · GATED`. The rule that makes it
 honest: **only `ops/live_status_check.py` may write LIVE** — it probes every
 surface from outside over public HTTP and records the evidence (URL, status,
@@ -29,7 +38,9 @@ that stops resolving is downgraded to GATED with a dated note, never deleted.
 Hand-edited LIVE is invalid by definition.
 
 Last full check: 2026-08-25 — **56 organs LIVE**, specialists LANE-REPORTED
-(compute lane honestly down at check time).
+(compute lane honestly down at check time). Gold banks on Hugging Face match
+the spine names (`gspc-agi` = safety, `gspc-prv` = provenance, `gspc-asi` =
+continuity). Re-run the checker before promoting a specialist to LIVE.
 
 ## Binding principle: bind, don't migrate
 
