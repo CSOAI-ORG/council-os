@@ -46,9 +46,21 @@ continuity). Re-run the checker before promoting a specialist to LIVE.
 
 Each lane package is a **pointer + contract + checker** over an existing repo
 or surface — nothing is rewritten to join the spine. Code moves only when a
-checker proves the move preserved behaviour. Current bindings include the
-interop artifacts (RFC 6962 Merkle log over the signed card chain, key
-lifecycle register, COSE_Sign1 expression) and the
+checker proves the move preserved behaviour.
+
+The lockfile is [`registry/bindings.json`](registry/bindings.json) — twelve pins
+(C2PA, OTS, SCITT, Emilia, Vaara, Conarium, XRPL, did:web, COSE, OTEL, embed).
+Adapters under `adapters/joined/` **call** those pins. They do not subtree-copy
+`emilia-protocol`, `c2pa-rs`, or `scitt-ccf-ledger` into this tree.
+
+```
+python3 ops/check_bindings.py
+python3 ops/reject_vendor_trees.py
+```
+
+Spray is `/embed` + `/badge` + card verify on *their* origin, not a 600-repo merge.
+
+Current interop artifacts also include the
 [card conformance corpus](https://github.com/CSOAI-ORG/councilof-ai/tree/conformance-runs/docs/card-conformance)
 — stdlib-only, so a stranger can verify the format without trusting us.
 
