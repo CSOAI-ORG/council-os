@@ -1,0 +1,27 @@
+{
+  "kind": "c2pa-vs-hmac-spike",
+  "pin": "c2pa-python==0.37.8",
+  "hmac_mcp": "CSOAI-ORG/c2pa-watermark-mcp",
+  "not_a_gspc_cell": true,
+  "cases": [
+    {
+      "name": "hmac-sidecar-png",
+      "hmac_mcp": "VALID",
+      "c2pa_python": "UNCHECKABLE",
+      "c2pa_reason": "no C2PA JUMBF boxes (HMAC sidecar is not C2PA)",
+      "note": "HMAC MCP never writes JUMBF. Shared-secret JSON is not C2PA."
+    },
+    {
+      "name": "cai-fixture-C.jpg",
+      "source": "contentauth/c2pa-python@v0.37.8 tests/fixtures/C.jpg",
+      "c2pa_python": "INVALID",
+      "validation_state": "Valid",
+      "validation_codes": [
+        "signingCredential.untrusted"
+      ],
+      "active_manifest": "contentauth:urn:uuid:c85a2b90-f1a0-4aa4-b17f-f938b475804e",
+      "note": "Real C2PA boxes. Untrusted cert without CAI trust list \u2192 INVALID under c2pa-cai. Still a manifest; HMAC PNG is not."
+    }
+  ],
+  "verdict": "HMAC MCP is not a C2PA verifier. Join is pip install c2pa-python, not a CSOAI subtree."
+}

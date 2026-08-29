@@ -1,0 +1,192 @@
+{
+  "schema": "csoai.bindings/0.1",
+  "doctrine": "bind, don't migrate. Pins + adapters. No 600-repo tree. Glass card stays card-v1.",
+  "not_a_monorepo": true,
+  "spray": "embed + badge + card verify on their origin. Do not ship Emilia Gate inside the snippet.",
+  "canonical_c2pa": "contentauth/c2pa-python",
+  "canonical_c2pa_mcp": null,
+  "canonical_c2pa_note": "Upstream SDK is the verifier. CSOAI watermark MCPs are HMAC/sales copies — archive from the story, do not ship six SKUs.",
+  "emilia_commit": "e507acdf8efbe8951cb4294801d4c440f0b86a5a",
+  "emilia_main_at_pin_time": "2edb6254a68ea7eda6cc27d306a40b11d4c06d46",
+  "updated": "2026-08-29",
+  "rows": [
+    {
+      "name": "c2pa-python",
+      "uri": "https://github.com/contentauth/c2pa-python",
+      "pypi": "c2pa-python==0.37.8",
+      "git_sha": "252cbeed40017a9e0d872973849c622b7ff215d4",
+      "git_ref": "v0.37.8",
+      "license": "MIT OR Apache-2.0",
+      "kind": "c2pa-manifest",
+      "preimage_rule": "c2pa-cai",
+      "status": "PINNED",
+      "checker": "adapters/bindings/verify_c2pa.py",
+      "wire": "pip install c2pa-python==0.37.8; Reader on the asset. Replace HMAC watermark MCPs."
+    },
+    {
+      "name": "c2pa-rs",
+      "uri": "https://github.com/contentauth/c2pa-rs",
+      "git_sha": "d245f3511cf887995ed4e5d719be9fff7d09d885",
+      "git_ref": "c2pa-v0.90.15",
+      "license": "MIT OR Apache-2.0",
+      "kind": "c2pa-manifest",
+      "preimage_rule": "c2pa-cai",
+      "status": "PINNED",
+      "checker": "adapters/bindings/verify_c2pa.py",
+      "wire": "crate behind c2pa-python 0.37.8. Do not vendor into CSOAI-ORG."
+    },
+    {
+      "name": "opentimestamps-client",
+      "uri": "https://github.com/opentimestamps/opentimestamps-client",
+      "pypi": "opentimestamps-client==0.7.2",
+      "git_sha": "cd71c7609421bed2a07b9642a3c02a58c9fd2cdf",
+      "license": "LGPL-3.0",
+      "kind": "ots",
+      "preimage_rule": "ots-v1",
+      "status": "PINNED",
+      "checker": "adapters/bindings/verify_ots.py",
+      "wire": "stamp published content_id digest; PENDING receipt fac1c486… already exists. TUI 1 stamps; this pin is the client."
+    },
+    {
+      "name": "pyscitt",
+      "uri": "https://github.com/microsoft/scitt-ccf-ledger",
+      "pypi": "pyscitt==0.14.2",
+      "git_sha": "537ccbdf997df9a4927d6137ac3d25c601b27e25",
+      "license": "MIT",
+      "kind": "scitt-receipt",
+      "preimage_rule": "rfc9942-ccf-profile",
+      "status": "PINNED",
+      "checker": null,
+      "wire": "client to a TS when we have one. Not our log. GitHub SPDX MIT not Apache-2.0."
+    },
+    {
+      "name": "scitt-api-emulator",
+      "uri": "https://github.com/scitt-community/scitt-api-emulator",
+      "git_sha": "6e6776070a1adf7298c9427871f15a8f087be73d",
+      "license": "MIT",
+      "kind": "scitt-receipt",
+      "preimage_rule": "scrapi-emulator",
+      "status": "EXPERIMENT",
+      "checker": null,
+      "wire": "hackathon local only; not prod"
+    },
+    {
+      "name": "emilia-protocol",
+      "uri": "https://github.com/emiliaprotocol/emilia-protocol",
+      "git_sha": "e507acdf8efbe8951cb4294801d4c440f0b86a5a",
+      "git_ref": "e507acdf",
+      "license": "Apache-2.0",
+      "kind": "emilia",
+      "preimage_rule": "ep-scitt-statement-identity-v0.1",
+      "status": "PINNED",
+      "checker": "adapters/bindings/verify_emilia.py",
+      "wire": "consume vectors.reference.json at this commit. Do not vendor main (HEAD moved)."
+    },
+    {
+      "name": "vaara",
+      "uri": "https://github.com/vaaraio/vaara",
+      "git_sha": "f5c31d2ab350693af904147ecf2f056e3ac0263e",
+      "license": "AGPL-3.0",
+      "kind": "vaara",
+      "preimage_rule": "vaara.receipt/v1",
+      "status": "REPRODUCTION",
+      "checker": null,
+      "wire": "SEP-2828 reproduction already filed. Do not vendor AGPL tree. SHA is hunt-time HEAD, not a frozen vector pin."
+    },
+    {
+      "name": "conarium",
+      "uri": "https://github.com/dogrucanemek-alt/conarium",
+      "git_sha": "22055ea1be1606aacd1ced6f085f8d6be94d281e",
+      "license": "MIT",
+      "kind": "conarium",
+      "preimage_rule": "conarium-v0.1",
+      "status": "PINNED",
+      "checker": null,
+      "wire": "read receipt schema; do not merge formats"
+    },
+    {
+      "name": "xrpl-py",
+      "uri": "https://github.com/XRPLF/xrpl-py",
+      "pypi": "xrpl-py==5.1.0",
+      "git_sha": "10ed82ee1f25c8bef0bf3bbc08d2708d6dde2a0f",
+      "license": "ISC",
+      "kind": "xrpl-credential",
+      "preimage_rule": "xrpl-xls70",
+      "status": "PINNED",
+      "checker": null,
+      "wire": "read objects on DEVNET hashes BC767FEF… / 958BA258…. No mint grade."
+    },
+    {
+      "name": "did-web",
+      "uri": "https://councilof.ai/.well-known/did.json",
+      "git_sha": null,
+      "license": null,
+      "kind": "did-web",
+      "preimage_rule": "did-web",
+      "status": "PRODUCT",
+      "checker": null,
+      "wire": "published did:web:csoai.org. Xu draft is not deployed MCP auth."
+    },
+    {
+      "name": "pycose",
+      "uri": "https://github.com/TimothyClaeys/pycose",
+      "pypi": "pycose==1.1.0",
+      "git_sha": "1458ddf14efffbd00bc4052d9026b63da725098e",
+      "license": "BSD-3-Clause",
+      "kind": "cose-wrap",
+      "preimage_rule": "cose-sign1",
+      "status": "PINNED",
+      "checker": null,
+      "wire": "envelope of published card bytes / content_id. Not a new card-v1."
+    },
+    {
+      "name": "opentelemetry-sdk",
+      "uri": "https://github.com/open-telemetry/opentelemetry-python",
+      "pypi": "opentelemetry-sdk==1.44.0",
+      "git_sha": "251d01a9b65b9a9386c8483de5a8065d9abce4de",
+      "license": "Apache-2.0",
+      "kind": "otel-run",
+      "preimage_rule": "otel-sdk",
+      "status": "PINNED",
+      "checker": null,
+      "wire": "spans of our harness only. Do not merge partner traces into the card."
+    },
+    {
+      "name": "council-embed",
+      "uri": "https://councilof.ai/embed",
+      "git_sha": null,
+      "license": "existing kit",
+      "kind": "product",
+      "preimage_rule": "card-v1",
+      "status": "PRODUCT",
+      "checker": null,
+      "wire": "n-site spray: /embed /badge /gspc-verify on their origin. 3kb glass. Not an iframe of /."
+    }
+  ],
+  "do_not_vendor": [
+    "emiliaprotocol/emilia-protocol (consume vectors only)",
+    "contentauth/c2pa-rs (call crate/pypi)",
+    "contentauth/c2pa-python (pip pin, not a subtree)",
+    "microsoft/scitt-ccf-ledger (pyscitt client only)",
+    "Mergekit",
+    "pet MCPs",
+    "pyscicat",
+    "Town"
+  ],
+  "archive_from_story": [
+    "CSOAI-ORG/csoai-watermark-attest-mcp",
+    "CSOAI-ORG/csoai-eu-aigc-icon-mcp",
+    "CSOAI-ORG/watermarking-authenticity-mcp",
+    "CSOAI-ORG/c2pa-watermark-mcp",
+    "CSOAI-ORG/agent-content-watermark-mcp",
+    "CSOAI-ORG/csoai-c2pa-durable-mcp"
+  ],
+  "archive_from_story_why": {
+    "CSOAI-ORG/c2pa-watermark-mcp": "HMAC-SHA256 sidecar over JSON. Reader reports ManifestNotFound. Not C2PA.",
+    "CSOAI-ORG/csoai-c2pa-durable-mcp": "Marketplace boilerplate + buy-ladder. Not the upstream verifier.",
+    "CSOAI-ORG/csoai-watermark-attest-mcp": "Art 50 sales copy. Fold into the one pin.",
+    "CSOAI-ORG/csoai-eu-aigc-icon-mcp": "Icon emitter duplicate.",
+    "CSOAI-ORG/watermarking-authenticity-mcp": "Duplicate + world-leading copy.",
+    "CSOAI-ORG/agent-content-watermark-mcp": "Art 50(2) envelope duplicate."
+  }
+}

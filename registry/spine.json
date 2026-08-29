@@ -826,5 +826,21 @@
   }
  },
  "binding_principle": "BIND, don't migrate: each package is a pointer + contract + checker over the existing repo/surface. Code moves only when a checker proves the move preserved behaviour.",
+ "bindings": {
+  "file": "registry/bindings.json",
+  "schema": "csoai.bindings/0.1",
+  "not_a_monorepo": true,
+  "canonical_c2pa": "contentauth/c2pa-python",
+  "pins": {
+   "c2pa-python": "c2pa-python==0.37.8",
+   "c2pa-python_git_sha": "252cbeed40017a9e0d872973849c622b7ff215d4",
+   "c2pa-rs": "d245f3511cf887995ed4e5d719be9fff7d09d885",
+   "emilia-protocol": "e507acdf8efbe8951cb4294801d4c440f0b86a5a",
+   "opentimestamps-client": "opentimestamps-client==0.7.2"
+  },
+  "checkers": "adapters/bindings/",
+  "spray": "embed + badge + card verify on their origin",
+  "note": "Join is a pin list + adapters + glass card. Do not subtree Emilia / c2pa-rs / scitt-ccf-ledger into CSOAI-ORG."
+ },
  "last_check": "2026-08-25"
 }
