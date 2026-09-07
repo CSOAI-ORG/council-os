@@ -15,7 +15,7 @@ RunPod pod (GPU)                          Mac (or any client machine)
 └─────────────────────────┘               │        ▼                     │
                                           │ dsh-mcp-server.py (stdio)    │
   local DSH on the Mac                    │        │                     │
-  (127.0.0.1:3090) works the ──────────►  │        ▼                     │
+  (127.0.0.1:3080) works the ──────────►  │        ▼                     │
   same way, no tunnel needed              │ Claude Code / any MCP client │
                                           └──────────────────────────────┘
 ```
@@ -27,7 +27,7 @@ RunPod pod (GPU)                          Mac (or any client machine)
 - **Security**: DSH has no request auth. It must bind `127.0.0.1` only —
   never `0.0.0.0`. The SSH tunnel is the auth boundary. `pod-setup.sh`
   enforces this; do not change it.
-- `DSH_URL` selects the target harness (local `:3090`, or a tunnel port for a
+- `DSH_URL` selects the target harness (local `:3080`, or a tunnel port for a
   pod). `DSH_TOKEN` is sent as a Bearer header for a future authenticating
   proxy; today nothing checks it.
 
@@ -57,7 +57,7 @@ Prereq: `pip3 install mcp` (same as the other house bridges).
 `dsh_get_output` (poll history + running flag) · `dsh_cancel` ·
 `dsh_workspace_ls`
 
-## Test record (2026-08-26, local DSH 127.0.0.1:3090, dsh 0.1.1-rc.2)
+## Test record (2026-08-26, local DSH 127.0.0.1:3080, dsh 0.1.1-rc.2)
 
 **Verified** (real stdio MCP handshake — initialize, tools/list, tools/call):
 - initialize + tools/list: all 8 tools listed.

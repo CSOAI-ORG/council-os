@@ -21,8 +21,10 @@ Register (Claude Code):
     claude mcp add dsh-harness -- python3 /Users/nicholas/clawd/council-os/bridges/dsh-mcp/dsh-mcp-server.py
 
 Environment:
-    DSH_URL    base URL of the DSH web server (default http://127.0.0.1:3090).
-               Point at a tunnel port (3081/3082/3083) to reach a pod.
+    DSH_URL    base URL of the DSH web server (default http://127.0.0.1:3080).
+               Live Mac `dsh web` listens on 3080. 3090 is the old SURFACE
+               note and is currently unbound. Point at a tunnel port
+               (3081/3082/3083) only to reach a pod.
     DSH_TOKEN  optional bearer token, sent as `Authorization: Bearer <token>`.
                NOTE: DSH 0.1.1-rc.2's web server does not check any request
                auth — the security boundary is 127.0.0.1 binding + SSH
@@ -42,7 +44,7 @@ try:
 except ImportError as e:
     raise SystemExit("mcp package not installed; run: pip install mcp") from e
 
-DSH_URL = os.environ.get("DSH_URL", "http://127.0.0.1:3090").rstrip("/")
+DSH_URL = os.environ.get("DSH_URL", "http://127.0.0.1:3080").rstrip("/")
 DSH_TOKEN = os.environ.get("DSH_TOKEN", "")
 TIMEOUT = int(os.environ.get("DSH_TIMEOUT", "30"))
 
